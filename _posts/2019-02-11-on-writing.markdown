@@ -5,7 +5,7 @@ date:   2019-02-10 02:18:54 -0800
 categories: intro
 ---
 
-I purchased this domain a few years ago, and for the better part of that time left it dormant.
+I purchased this domain a few years ago and for the better part of that time, left this dormant.
 
 The idea of spinning up a site would get de-prioritized for anything else that came up. The return on designing and maintaining something like this seemed like effort better spent on other 'actually meaningful' projects.
 
