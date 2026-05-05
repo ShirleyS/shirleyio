@@ -6,7 +6,7 @@ const links = [
   { href: "#apply", label: "Why this role" },
   { href: "#why", label: "Why I'm here" },
   { href: "#experience", label: "Experience" },
-  { href: "#chapter", label: "Chapter II" },
+  { href: "#chapter", label: "The Detour" },
   { href: "#systems", label: "Builds" },
 ];
 

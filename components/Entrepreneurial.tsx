@@ -55,7 +55,7 @@ const skills = [
 export function Entrepreneurial() {
   return (
     <Section id="chapter" className="border-t border-[var(--color-line)]">
-      <Eyebrow index="04" label="Chapter II — The detour" />
+      <Eyebrow index="04" label="The Detour" />
 
       <div className="mt-7 grid gap-8 md:mt-10 md:grid-cols-12">
         <div className="md:col-span-6">

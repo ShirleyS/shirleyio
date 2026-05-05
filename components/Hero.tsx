@@ -48,7 +48,7 @@ export function Hero() {
             >
               A decade of{" "}
               <span className="italic text-[var(--color-ink-2)]">
-                martech and measurement infrastructure
+                data-driven growth infrastructure
               </span>{" "}
               for enterprise teams.
             </motion.h1>

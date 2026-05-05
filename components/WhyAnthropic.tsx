@@ -25,14 +25,14 @@ export function WhyAnthropic() {
           <p>
             On the obvious question first &mdash; yes, I have been supporting
             five active businesses. The reason I can step into a full-time role
-            is that the last two years of work have been about exactly that:
-            building the org, the processes, and the platform (RIOS) so the
-            businesses run without me as a single point of failure. My
-            partner co-runs them with a fully capable team behind her;
+            now is that the last two years of work have been about exactly
+            that: building the org, the processes, and the platform (RIOS)
+            so the businesses run without me as a single point of failure.
+            My partner co-runs them with a fully capable team behind her;
             the day-to-day continues whether I&rsquo;m involved or not.
-            Stepping back from operations was the goal. That work is done.
-            Anthropic was attractive to me a year ago too &mdash; the timing
-            just wasn&rsquo;t right then.
+            Stepping back from operations was the goal. Anthropic was
+            attractive to me a year ago too &mdash; the timing just
+            wasn&rsquo;t right then. It&rsquo;s starting to feel right now.
           </p>
 
           <p>
