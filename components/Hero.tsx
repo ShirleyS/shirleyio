@@ -32,7 +32,7 @@ export function Hero() {
         >
           <span>Based in Mexico City</span>
           <span className="text-[var(--color-line-strong)]">/</span>
-          <span>10 yrs · GTM infrastructure & measurement</span>
+          <span>10 yrs at growth-stage startups · Operator-founder · Daily Claude builder</span>
           <span className="text-[var(--color-line-strong)]">/</span>
           <span>Open to travel or relocation — SF, NYC</span>
         </motion.div>
@@ -46,11 +46,11 @@ export function Hero() {
               transition={{ duration: 0.9, delay: 0.05, ease }}
               className="serif text-[clamp(2.2rem,5vw,3.8rem)] font-normal leading-[1.05] tracking-[-0.02em] text-[var(--color-ink)]"
             >
-              A decade of{" "}
+              A decade of Solutions Architecture for growth-stage tech teams
+              &mdash;{" "}
               <span className="italic text-[var(--color-ink-2)]">
-                data-driven growth infrastructure
-              </span>{" "}
-              for enterprise teams.
+                and five live businesses running on systems I built with Claude.
+              </span>
             </motion.h1>
 
             <motion.p
@@ -59,16 +59,22 @@ export function Hero() {
               transition={{ duration: 0.9, delay: 0.18, ease }}
               className="mt-4 max-w-[60ch] text-[16.5px] leading-[1.6] text-[var(--color-muted)] md:text-[17.5px]"
             >
-              I&rsquo;m Shirley. I led customer-facing engineering at{" "}
-              <span className="text-[var(--color-ink)]">Clearbit</span>{" "}
-              <span className="text-[var(--color-subtle)]">(acq. HubSpot)</span>,{" "}
+              I&rsquo;m Shirley. I&rsquo;ve spent a decade as a pre-sales
+              Solutions Architect and Customer Success Engineering leader at{" "}
+              <span className="text-[var(--color-ink)]">Vero</span>{" "}
+              <span className="text-[var(--color-subtle)]">(Series A)</span>,{" "}
               <span className="text-[var(--color-ink)]">Demandbase</span>, and{" "}
-              <span className="text-[var(--color-ink)]">Oracle Marketing Cloud</span>
-              . Today, I build AI-native operational systems{" "}
-              <span className="text-[var(--color-ink)]">with Claude</span>{" "}
-              &mdash; and{" "}
-              <span className="text-[var(--color-ink)]">my five businesses</span>{" "}
-              run on top of them.
+              <span className="text-[var(--color-ink)]">Clearbit</span>{" "}
+              <span className="text-[var(--color-subtle)]">(acq. HubSpot)</span>
+              &mdash; supporting growth-stage technology customers (Stripe,
+              Slack, Meta, Intercom, Unity, Segment) through their build and
+              scale phases. For the last two years I&rsquo;ve been a
+              founder-operator running{" "}
+              <span className="text-[var(--color-ink)]">five live businesses</span>{" "}
+              on systems I architected and built{" "}
+              <span className="text-[var(--color-ink)]">with Claude</span>
+              &mdash; which means I walk into the role with practitioner
+              credibility, not just product knowledge.
             </motion.p>
 
             <motion.div
@@ -108,29 +114,29 @@ export function Hero() {
         >
           <div>
             <div className="mono mb-3.5 text-[10.5px] uppercase tracking-[0.2em] text-[var(--color-subtle)]">
-              Customers shipped to / supported
+              Growth-stage tech companies shipped to / supported
             </div>
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2.5 text-[var(--color-muted)]">
               {[
-                "Accenture",
-                "Adobe",
-                "Asana",
-                "AWS",
-                "Deloitte",
-                "DocuSign",
-                "G2",
-                "Gong",
-                "HubSpot",
-                "Intercom",
-                "Meta",
-                "Okta",
-                "Qualified",
-                "Segment",
-                "Slack",
-                "Snowflake",
                 "Stripe",
+                "Slack",
+                "Meta",
+                "Intercom",
                 "Unity",
+                "Segment",
+                "HubSpot",
+                "Snowflake",
+                "Asana",
+                "Okta",
+                "DocuSign",
+                "Gong",
+                "Qualified",
+                "G2",
+                "Adobe",
                 "Visa",
+                "AWS",
+                "Accenture",
+                "Deloitte",
                 "and many, many more",
               ].map((c) => (
                 <span
@@ -149,21 +155,21 @@ export function Hero() {
             </div>
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2.5 text-[var(--color-muted)]">
               {[
+                "Anthropic API / Claude SDK",
+                "Salesforce",
+                "HubSpot",
+                "Marketo",
+                "Eloqua",
+                "Outreach",
                 "Adobe Analytics",
                 "Adobe Target",
-                "AWS",
-                "Clearbit",
-                "Eloqua",
                 "Google Analytics",
                 "Google Tag Manager",
-                "HubSpot",
-                "Intercom",
-                "Marketo",
-                "Optimizely",
-                "Outreach",
-                "Responsys",
-                "Salesforce",
                 "Segment",
+                "Optimizely",
+                "Clearbit",
+                "Intercom",
+                "Responsys",
                 "Tray.io",
                 "Zapier",
                 "and many, many more",

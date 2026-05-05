@@ -11,7 +11,7 @@ export function Timeline() {
   const [open, setOpen] = useState<string | null>(timeline[0].company);
   return (
     <Section id="experience" className="border-t border-[var(--color-line)]">
-      <Eyebrow index="03" label="Experience" />
+      <Eyebrow index="04" label="Experience" />
 
       <div className="mt-7 grid gap-8 md:mt-10 md:grid-cols-12">
         <div className="md:col-span-4">

@@ -9,7 +9,7 @@ const criteria = [
 export function WhyAnthropic() {
   return (
     <Section id="why" className="border-t border-[var(--color-line)]">
-      <Eyebrow index="02" label="Why I'm here" />
+      <Eyebrow index="01" label="Why I'm here" />
 
       <div className="mt-7 grid gap-8 md:mt-10 md:grid-cols-12 md:gap-10">
         <div className="md:col-span-4">
@@ -37,19 +37,23 @@ export function WhyAnthropic() {
 
           <p>
             What pulled me toward Anthropic is twofold. This role in particular
-            reads like an unusual fit with the experience I&rsquo;ve actually
-            built &mdash; martech infrastructure, measurement, vendor and
-            platform coordination, the operational layer underneath all of it.
-            And Anthropic itself is, by almost any measure, one of the most
-            attractive places in tech right now &mdash; the work, the team,
-            and the trajectory all line up. I&rsquo;ve been using Claude as a
-            daily operator across my businesses, and the rate of capability
-            gains release-over-release has been hard to look away from &mdash;
-            it&rsquo;s rare to watch a product redefine what&rsquo;s possible
-            this quickly. It&rsquo;s one of the few companies
-            whose work I&rsquo;d want to be inside of regardless of role; if a
-            different growth opportunity at Anthropic fit better than this one,
-            I&rsquo;d be open to that conversation too.
+            reads like an unusual fit with the work I&rsquo;ve actually done
+            &mdash; pre-sales Solutions Architecture for growth-stage tech
+            customers, founder-led technical conversations, evaluation
+            framework design for AI products, and the architectural advisory
+            work that lives between technical evaluation and production
+            deployment. And Anthropic itself is, by almost
+            any measure, one of the most attractive places in tech right now
+            &mdash; the work, the team, and the trajectory all line up.
+            I&rsquo;ve been using Claude as a daily operator across my
+            businesses, and the rate of capability gains release-over-release
+            has been hard to look away from &mdash; it&rsquo;s rare to watch a
+            product redefine what&rsquo;s possible this quickly. The mission
+            &mdash; advancing safe and beneficial AI systems &mdash; is one of
+            the few in tech I find genuinely worth spending the next chapter
+            of my career on. I want to be at Anthropic. This role is the
+            cleanest fit; if the team thinks I&rsquo;d land harder somewhere
+            adjacent, I&rsquo;d hear that conversation too.
           </p>
 
           <p>

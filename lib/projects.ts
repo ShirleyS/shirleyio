@@ -19,7 +19,7 @@ export const projects: Project[] = [
     name: "RIOS",
     status: "In production",
     url: "https://riosuno.com",
-    tagline: "Operational intelligence for a multi-location food and beverage portfolio",
+    tagline: "Operational intelligence across a multi-vertical portfolio of operating businesses",
     oneLiner:
       "An executive dashboard and data-completeness layer that unifies POS, inventory, and accounting signal across five operating businesses.",
     problem:

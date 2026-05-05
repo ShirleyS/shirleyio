@@ -43,19 +43,19 @@ const skills = [
   "Marketing",
   "Negotiations",
   "Sales",
-  "Coding",
-  "Design",
+  "AI-native systems design",
+  "Multi-entity ops architecture",
   "Planning and Projections",
   "Prioritization",
   "Team building",
   "Operational excellence",
-  "Navigating the unknown",
+  "Builder-operator translation",
 ];
 
 export function Entrepreneurial() {
   return (
     <Section id="chapter" className="border-t border-[var(--color-line)]">
-      <Eyebrow index="04" label="The Detour" />
+      <Eyebrow index="05" label="The Detour" />
 
       <div className="mt-7 grid gap-8 md:mt-10 md:grid-cols-12">
         <div className="md:col-span-6">
@@ -103,17 +103,16 @@ export function Entrepreneurial() {
             After a decade in tech, I&rsquo;d done most of what I&rsquo;d set
             out to do &mdash; except build a business from zero, on my own
             terms. So my partner and I moved to CDMX and together started a
-            small portfolio of food and beverage businesses. The
+            small portfolio of operating businesses. The
             systems thinking carried over. Only the inputs changed &mdash;
             customers, staff, regulators, supply chain.
           </p>
           <p>
-            By most of the operating measures that matter for businesses of
-            this kind &mdash; unit economics, retention, ticket size, cost
-            discipline, growth across locations &mdash; these are
-            outperforming their peer set. The startup skillsets I built in
-            tech are the direct reason, and what sets us apart from most
-            operators in the category.
+            Five live locations across CDMX, all operating today. The startup
+            skillsets I built in tech &mdash; instrumentation, measurement,
+            systems thinking, ruthless prioritization &mdash; are the direct
+            reason we&rsquo;ve been able to scale from one location to five,
+            and what sets us apart from most operators in the category.
           </p>
         </div>
       </div>
@@ -153,7 +152,7 @@ export function Entrepreneurial() {
           <span>The portfolio</span>
           <span className="h-px flex-1 bg-[var(--color-line)]" />
           <span className="text-[var(--color-accent)]">
-            Outperforming on most operating measures
+            Five locations · Operating across CDMX
           </span>
         </div>
         <div className="grid grid-cols-2 gap-px overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-line)] bg-[var(--color-line)] sm:grid-cols-3 md:grid-cols-5">

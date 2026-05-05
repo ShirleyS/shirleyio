@@ -12,11 +12,11 @@ export default function Page() {
     <main className="grain relative min-h-dvh">
       <Nav />
       <Hero />
-      <Closing />
       <WhyAnthropic />
+      <Closing />
+      <Systems />
       <Timeline />
       <Entrepreneurial />
-      <Systems />
       <Footer />
     </main>
   );

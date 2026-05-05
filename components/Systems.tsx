@@ -13,7 +13,7 @@ export function Systems() {
 
   return (
     <Section id="systems" className="border-t border-[var(--color-line)]">
-      <Eyebrow index="05" label="Selected Builds" />
+      <Eyebrow index="03" label="Selected Builds" />
 
       <div className="mt-7 md:mt-10">
         <h2 className="serif max-w-[26ch] text-[clamp(2rem,3.8vw,3rem)] font-normal leading-[1.05] tracking-[-0.018em] text-[var(--color-ink)]">
