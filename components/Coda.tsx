@@ -20,12 +20,12 @@ export function Coda() {
 
         <div className="md:col-span-7">
           <p className="serif text-[16.5px] leading-[1.65] text-[var(--color-ink-2)] md:text-[17.5px]">
-            Ten years architecting for growth-stage tech. A chapter
-            operating from the customer chair &mdash; in a country and
-            tax code I had to learn from scratch. Recent work shipping
-            production AI systems with Claude. This is the role that
-            brings the three together &mdash; helping the next wave of
-            Claude-native startups go from evaluation to scale.
+            Ten years architecting and solutioning for growth-stage tech.
+            Operator-founder &mdash; jumped into a foreign country I barely spoke the language of, and built five working businesses out of it.
+            Recent work shipping production AI systems with Claude. This
+            is the role that brings the three together &mdash; helping
+            the next wave of Claude-native startups go from evaluation to
+            scale.
           </p>
           <p className="mt-4 text-[15.5px] leading-[1.65] text-[var(--color-muted)] md:text-[16.5px]">
             The resume&rsquo;s below. The cover letter is this page. The

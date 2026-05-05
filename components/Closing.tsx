@@ -1,23 +1,23 @@
 const overlap: Array<{ jd: string; me: string }> = [
   {
     jd: "Trusted technical advisor through the Claude adoption journey — partner with Account Executives, translate startup requirements into technical solutions, support evaluation through deployment and expansion",
-    me: "Embedded technical advisor has been the job since 2014. At Demandbase as Solutions Engineering Lead, at Clearbit running both the SA and CSE org for tier-one accounts (Stripe, Slack, Meta, Intercom, Unity, Segment in their growth-stage years). Owning both pre-sales and post-sales technical work meant the sales conversations had to scope solutions my own team could actually deliver &mdash; no overclaiming, no half-baked architecture promises in the scoping call. AE partnership was daily work: reps trusted me in the room because what I committed to in pre-sales shipped without surprises post-close.",
+    me: "Embedded technical advisor has been the job since 2014. At Demandbase as Solutions Engineering Lead, at Clearbit running both the SA and CSE org for tier-one accounts (Stripe, Slack, Intercom, Segment in their growth-stage years). Owning both pre-sales and post-sales technical work meant the sales conversations had to scope solutions my own team could actually deliver &mdash; no overclaiming, no half-baked architecture promises in the scoping call. AE partnership was daily work: reps trusted me in the room because what I committed to in pre-sales shipped without surprises post-close.",
   },
   {
     jd: "Win technical evaluations — help startups develop evaluation frameworks to measure Claude's performance for their specific use cases",
-    me: "Eval design for AI products is where I&rsquo;ve spent the last two years. RIOS, CasaRuta, and CapitalRuta each required me to build the eval framework from scratch &mdash; golden datasets, regression suites, drift detection, and the human-review boundaries that decide where the system can and can&rsquo;t be trusted. Same pattern carried over from a decade of enterprise technical evaluations: define what &lsquo;working&rsquo; means in the customer&rsquo;s context, instrument for it, and make the technical case empirically rather than rhetorically.",
+    me: "Running technical evaluations was the core of pre-sales at Demandbase and Clearbit. Tier-one deals always came with a POC &mdash; the customer&rsquo;s own data, their use cases, and the criteria they&rsquo;d accept as proof the product worked. My job was scoping that list with them, instrumenting the test, and demonstrating results with evidence rather than slides. A decade of doing that is what I&rsquo;d bring to helping startups define what &lsquo;working&rsquo; looks like for Claude in their context.",
   },
   {
     jd: "Build technical credibility with founders, founding engineers, and startup engineering teams — speak their language, understand build patterns, guide architecture decisions",
-    me: "I&rsquo;ve been a founder-shaped operator for the last two years and a technical leader at growth-stage startups for a decade before that &mdash; Vero (Series A), Demandbase (mid-stage), Clearbit (Series A through HubSpot acquisition). The constraints, velocity, and trade-offs early-stage teams make are the constraints I live in daily. And I&rsquo;ve made every architecture decision a Claude-native company faces: deterministic vs agentic boundaries, eval discipline, when to invest in observability, when human review is non-negotiable, where the rules end and the model begins.",
+    me: "I&rsquo;ve been a founder-shaped operator for the last two years and a technical leader at growth-stage startups for a decade before that &mdash; Demandbase (mid-stage), Clearbit (Series A through HubSpot acquisition). The constraints, velocity, and trade-offs early-stage teams make are the constraints I live in daily. And I&rsquo;ve made the architecture calls my own systems needed: where Claude is in the loop and where it isn&rsquo;t, where humans review before anything ships, and what &lsquo;working&rsquo; looks like for each one. Those are the same questions early Claude-native teams are working through.",
   },
   {
     jd: "Hands-on building and deploying LLM-powered applications in production — context engineering, evaluation frameworks, modern AI architectures",
-    me: "RIOS, CasaRuta, and CapitalRuta are three production LLM-powered systems I designed, built, and operate &mdash; across measurement infrastructure (RIOS), product comparison and eligibility logic for 104 mortgage products (CasaRuta), and SMB capital matching (CapitalRuta). Context engineering, eval-loop design, retrieval boundaries, prompt versioning, and the deterministic/agentic split are decisions I&rsquo;ve made deliberately for each. Comfortable with Python and the Anthropic API/SDK as my daily build surface. Not theoretical &mdash; running today.",
+    me: "RIOS, CasaRuta, and CapitalRuta are three production LLM-powered systems I designed, built, operate, and use &mdash; across measurement infrastructure (RIOS), product comparison and eligibility logic for 104 mortgage products (CasaRuta), and SMB capital matching (CapitalRuta). For each, I&rsquo;ve had to decide what data Claude sees, what counts as a correct answer, and where Claude does the work vs. where deterministic code handles it. All three systems are live and in use today.",
   },
   {
     jd: "Track record selling technical products in competitive markets + strong technical communication for founders and engineering teams",
-    me: "Selling technical solutions has been the job &mdash; closing enterprise deals at Demandbase against Marketo, Bizible, and the rest of the ABM market; defending Clearbit&rsquo;s data layer against ZoomInfo and Apollo in tier-one bake-offs. The honest caveat: I haven&rsquo;t carried a quota formally. I&rsquo;ve been the technical lead on more competitive evaluations than I can count, and I&rsquo;ve earned trust with founders and engineering teams the way the JD describes &mdash; by speaking the language, knowing the build patterns, and not bluffing on what I don&rsquo;t know. Quota-bearing OTE is the one piece I&rsquo;d be ramping into; everything else is daily work.",
+    me: "Selling technical solutions has been the job &mdash; closing enterprise deals at Demandbase in head-to-head bake-offs against 6sense, Terminus, and Engagio; defending Clearbit&rsquo;s data layer against ZoomInfo and Apollo in tier-one evaluations. I&rsquo;ve led the data evaluations and product demos in more competitive cycles than I can count, earning trust with founders and engineering teams the way the JD describes &mdash; by understanding what they&rsquo;re building, asking the questions that actually matter, and naming what I&rsquo;d need to learn to do the work well.",
   },
 ];
 
@@ -53,13 +53,10 @@ export function Closing() {
             teams don&rsquo;t carry &mdash; every scoping commitment had
             to be one my own delivery team could honor. Recently I&rsquo;ve shipped three production AI systems with
             Claude &mdash; RIOS, CasaRuta, and CapitalRuta &mdash;
-            building the same architectural patterns
-            Anthropic&rsquo;s startup customers face. I also run five food
-            and beverage businesses in CDMX with my partner; the operator
-            chair is what taught me what production reality actually
-            demands of a system. That&rsquo;s the combination I&rsquo;d
-            bring on day one &mdash; full-lifecycle ownership at
-            growth-stage tech, plus practitioner-level Claude experience.
+            building the same architectural patterns Anthropic&rsquo;s
+            startup customers face. That&rsquo;s the combination I&rsquo;d
+            bring on day one: full-lifecycle ownership at growth-stage
+            tech, plus practitioner-level Claude experience.
           </p>
         </div>
 

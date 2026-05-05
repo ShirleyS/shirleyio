@@ -33,12 +33,12 @@ export const projects: Project[] = [
       {
         layer: "Completeness",
         detail:
-          "A first-class completeness layer per entity (empresa / marca / ubicación) — every dashboard view declares what data it depends on and refuses to render misleading numbers when something is missing or stale.",
+          "A first-class completeness layer per entity (Company, Brand, Location) — every dashboard view declares what data it depends on and refuses to render misleading numbers when something is missing or stale.",
       },
       {
         layer: "Reconciliation",
         detail:
-          "Same-grain comparisons across POS, accounting, and bank deposits. Drift is surfaced as an exception rather than averaged into a misleadingly clean total.",
+          "We compare POS, accounting, and bank deposits in the same units so the numbers actually line up. When they don&rsquo;t, the system flags the gap instead of quietly averaging it away.",
       },
       {
         layer: "Executive layer",
@@ -51,7 +51,7 @@ export const projects: Project[] = [
           "Claude on top, scoped to an explicit memory of business structure, vendors, and known anomalies — used for explanation, summarization, and drafting weekly operating notes that are reviewed before they leave the system.",
       },
     ],
-    ai: "Used. Claude reads the warehouse for natural-language queries, anomaly explanation (&ldquo;why is Tuesday low?&rdquo;), and structured drafting of the weekly operating note. Every Claude touchpoint sits behind a deterministic data fetch and a human review step before the output is acted on.",
+    ai: "Used. Claude handles the unstructured inputs that feed the warehouse &mdash; receipts and statements &mdash; extracting structured fields so the deterministic side can reconcile against them. Every output is validated before it lands.",
     stack: [
       "Next.js · TypeScript",
       "Postgres / warehouse",

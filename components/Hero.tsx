@@ -32,7 +32,7 @@ export function Hero() {
         >
           <span>Based in Mexico City</span>
           <span className="hidden text-[var(--color-line-strong)] md:inline">/</span>
-          <span>10 yrs at growth-stage startups · Operator-founder · Daily Claude builder</span>
+          <span>10+ yrs at growth-stage startups · Operator-founder · Daily Claude builder</span>
           <span className="hidden text-[var(--color-line-strong)] md:inline">/</span>
           <span>Open to travel — SF, NYC</span>
         </motion.div>

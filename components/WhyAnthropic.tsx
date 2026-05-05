@@ -23,11 +23,12 @@ export function WhyAnthropic() {
 
         <div className="prose-editorial md:col-span-8">
           <p>
-            On the obvious question first &mdash; yes, I have been busy
-            building and supporting five businesses in Mexico City. The reason I can step into a full-time role
-            now is that the last two years of work have been about exactly
-            that: building the org, the processes, and the platform (RIOS)
-            so the businesses run without me as a single point of failure.
+            First, the obvious: after stepping away from tech, I&rsquo;ve
+            been busy building and supporting five businesses in Mexico
+            City. The last couple of years have been about engineering
+            myself out of the day-to-day &mdash; building the org, the
+            processes, and the platform (RIOS) so the businesses run
+            without me as a single point of failure.
             My partner co-runs them with a fully capable team behind her;
             the day-to-day continues whether I&rsquo;m involved or not.
             Stepping back from operations was the goal. Anthropic was
@@ -37,7 +38,7 @@ export function WhyAnthropic() {
 
           <p>
             What pulled me toward Anthropic is twofold. This role in particular
-            reads like an unusual fit with the work I&rsquo;ve actually done
+            reads as a distinct match for the work I&rsquo;ve actually done
             &mdash; pre-sales Solutions Architecture and post-sales engineering
             ownership for growth-stage tech customers, founder-led technical
             conversations, and the architectural advisory work that lives
@@ -46,11 +47,8 @@ export function WhyAnthropic() {
             &mdash; the work, the team, and the trajectory all line up.
             I&rsquo;ve been using Claude as a daily operator across my
             businesses, and the rate of capability gains release-over-release
-            has been hard to look away from &mdash; it&rsquo;s rare to watch a
-            product redefine what&rsquo;s possible this quickly. The mission
-            &mdash; advancing safe and beneficial AI systems &mdash; is one of
-            the few in tech I find genuinely worth spending the next chapter
-            of my career on. I want to be at Anthropic. This role is the
+            has been hard to miss &mdash; it&rsquo;s rare to watch a
+            product redefine what&rsquo;s possible this quickly. The honest pull is the learning curve. Being inside the work at Anthropic &mdash; instead of watching it from the outside &mdash; is the kind of opportunity I haven&rsquo;t had access to in years. I want to be at Anthropic. This role is the
             cleanest fit; if the team thinks I&rsquo;d land harder somewhere
             adjacent, I&rsquo;d hear that conversation too.
           </p>
