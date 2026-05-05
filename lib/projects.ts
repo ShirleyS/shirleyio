@@ -112,8 +112,8 @@ export const projects: Project[] = [
     ],
     ai: "Used upstream, not in the user-facing decision. Agents crawled the public web — bank product pages, Infonavit and FOVISSSTE documentation, SOFOM and fintech disclosures — to assemble the 104-product catalog and keep it normalized against one schema. The eligibility outcome shown to a borrower stays deterministic: it has to be auditable, explainable, and stable across runs.",
     stack: [
-      "React 18 · Vite · TypeScript",
-      "Tailwind v4",
+      "React · TypeScript",
+      "Tailwind",
       "Supabase (Postgres + auth)",
       "Netlify",
     ],
@@ -153,7 +153,7 @@ export const projects: Project[] = [
       {
         layer: "Eligibility + fit",
         detail:
-          "Phase-1 rules engine: revenue, months in business, entity type, bureau requirement. Fit ranking weights accessibility, cost, speed, and approval probability.",
+          "Rules engine today covers revenue, months in business, entity type, and bureau requirement. Fit ranking weights accessibility, cost, speed, and approval probability.",
       },
       {
         layer: "Three-role surface",
@@ -163,8 +163,8 @@ export const projects: Project[] = [
     ],
     ai: "Used upstream, not in the user-facing decision. Agents crawled the public web — bank, fintech, government program, factoring, and equity provider sources — to assemble the multi-category catalog across 10+ institution types. The eligibility answer shown to a small-business owner stays deterministic. The probabilistic AI layer (approval likelihood, signal scoring) is sequenced for later, where the underlying problem is genuinely probabilistic — never as a shortcut around the rule-based work.",
     stack: [
-      "React 18 · Vite · TypeScript",
-      "Tailwind v4 · Radix UI",
+      "React · TypeScript",
+      "Tailwind",
       "Supabase (Postgres + auth)",
       "Netlify",
     ],

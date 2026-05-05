@@ -23,6 +23,7 @@ export function Systems() {
           <JDMap
             project="RIOS"
             slug="rios"
+            url="https://riosuno.com"
             active={active === "rios"}
             onSelect={setActive}
             note="Measurement and reporting infrastructure across five operating businesses — completeness, reconciliation, and the executive layer that makes the numbers actionable."
@@ -30,6 +31,7 @@ export function Systems() {
           <JDMap
             project="CasaRuta"
             slug="casaruta"
+            url="https://casaruta.com"
             active={active === "casaruta"}
             onSelect={setActive}
             note="A normalized product catalog, eligibility schema, and programmatic surface — the platform-shaped work of comparing 104 mortgage products across a standardized set of attributes."
@@ -37,6 +39,7 @@ export function Systems() {
           <JDMap
             project="CapitalRuta"
             slug="capitalruta"
+            url="https://capitalruta.com"
             active={active === "capitalruta"}
             onSelect={setActive}
             note="A capital matching layer for Mexican SMBs. Rule-based today; the AI underwriting layer comes later, sitting on top of the rules that already work — not in place of them."
