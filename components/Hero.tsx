@@ -32,7 +32,7 @@ export function Hero() {
         >
           <span>Based in Mexico City</span>
           <span className="text-[var(--color-line-strong)]">/</span>
-          <span>10 yrs · martech, CDP, measurement</span>
+          <span>10 yrs · GTM infrastructure & measurement</span>
           <span className="text-[var(--color-line-strong)]">/</span>
           <span>Open to travel or relocation — SF, NYC</span>
         </motion.div>
@@ -81,7 +81,7 @@ export function Hero() {
                 Resume
               </CTA>
               <CTA href="#apply">Why this role</CTA>
-              <CTA href="#systems">Selected systems</CTA>
+              <CTA href="#systems">Selected builds</CTA>
               <CTA href="https://linkedin.com/in/shirleyshaw" external>
                 LinkedIn
               </CTA>

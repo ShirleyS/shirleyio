@@ -23,7 +23,7 @@ export function Closing() {
   return (
     <section
       id="apply"
-      className="relative scroll-mt-24 border-t border-[var(--color-line)] px-6 py-12 sm:px-8 md:py-16"
+      className="relative scroll-mt-[-1rem] border-t border-[var(--color-line)] px-6 py-12 sm:px-8 md:py-16"
     >
       <div className="mx-auto w-full max-w-[1080px]">
         <div className="mono mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.18em] text-[var(--color-subtle)]">

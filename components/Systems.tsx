@@ -13,11 +13,11 @@ export function Systems() {
 
   return (
     <Section id="systems" className="border-t border-[var(--color-line)]">
-      <Eyebrow index="05" label="Selected Systems" />
+      <Eyebrow index="05" label="Selected Builds" />
 
       <div className="mt-7 md:mt-10">
         <h2 className="serif max-w-[26ch] text-[clamp(2rem,3.8vw,3rem)] font-normal leading-[1.05] tracking-[-0.018em] text-[var(--color-ink)]">
-          Three production systems.
+          Three builds in production.
         </h2>
         <div className="mt-7 grid gap-6 md:grid-cols-3 md:gap-7">
           <JDMap
@@ -28,7 +28,6 @@ export function Systems() {
             note="Measurement and reporting infrastructure across five operating businesses — completeness, reconciliation, and the executive layer that makes the numbers actionable."
           />
           <JDMap
-            area="MarTech Infrastructure"
             project="CasaRuta"
             slug="casaruta"
             active={active === "casaruta"}
@@ -36,7 +35,6 @@ export function Systems() {
             note="A normalized product catalog, eligibility schema, and programmatic surface — the platform-shaped work of comparing 104 mortgage products across a standardized set of attributes."
           />
           <JDMap
-            area="Workflow Automation"
             project="CapitalRuta"
             slug="capitalruta"
             active={active === "capitalruta"}

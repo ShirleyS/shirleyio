@@ -3,7 +3,7 @@ export type Project = {
   name: string;
   status: string;
   url: string;
-  jdArea: string;
+  jdArea?: string;
   tagline: string;
   oneLiner: string;
   problem: string;
@@ -72,7 +72,6 @@ export const projects: Project[] = [
     name: "CasaRuta",
     status: "In production",
     url: "https://casaruta.com",
-    jdArea: "MarTech Infrastructure",
     tagline:
       "A Spanish-language mortgage comparison and eligibility engine for Mexican homebuyers",
     oneLiner:
@@ -129,7 +128,6 @@ export const projects: Project[] = [
     name: "CapitalRuta",
     status: "In production",
     url: "https://capitalruta.com",
-    jdArea: "Workflow Automation",
     tagline:
       "A capital matching layer for Mexican entrepreneurs and SMBs",
     oneLiner:
@@ -145,7 +143,7 @@ export const projects: Project[] = [
       {
         layer: "Hybrid data model",
         detail:
-          "Static seed catalog plus a Supabase layer of approved diffs (provider_edits) — so providers can update their listings without forking the source of truth.",
+          "A static seed catalog as the source of truth, with a Supabase layer on top that captures approved provider edits — so providers can keep their listings current without us having to fork or rebuild the catalog underneath.",
       },
       {
         layer: "Monthly refresh",

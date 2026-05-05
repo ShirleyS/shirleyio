@@ -16,8 +16,8 @@ export function Timeline() {
       <div className="mt-7 grid gap-8 md:mt-10 md:grid-cols-12">
         <div className="md:col-span-4">
           <h2 className="serif text-[clamp(1.9rem,3.6vw,2.8rem)] font-normal leading-[1.08] tracking-[-0.018em] text-[var(--color-ink)]">
-            A decade spent where customer intent meets the systems that have
-            to honor it.
+            Ten years building, integrating, and deploying the tools sales,
+            marketing, and revenue teams rely on.
           </h2>
           <p className="mono mt-6 text-[11px] uppercase tracking-[0.18em] text-[var(--color-subtle)]">
             Click any row to expand

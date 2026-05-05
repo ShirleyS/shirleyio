@@ -38,14 +38,14 @@ const businesses: Array<{
 ];
 
 const skills = [
-  "Attribution & measurement",
+  "Attribution and measurement",
   "Targeting",
   "Marketing",
   "Negotiations",
   "Sales",
   "Coding",
   "Design",
-  "Projections",
+  "Planning and Projections",
   "Prioritization",
   "Team building",
   "Operational excellence",

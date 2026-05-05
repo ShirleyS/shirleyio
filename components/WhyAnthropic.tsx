@@ -23,12 +23,12 @@ export function WhyAnthropic() {
 
         <div className="prose-editorial md:col-span-8">
           <p>
-            On the obvious question first &mdash; yes, I do co-operate five
-            active businesses. The reason I can step into a full-time role
+            On the obvious question first &mdash; yes, I have been supporting
+            five active businesses. The reason I can step into a full-time role
             is that the last two years of work have been about exactly that:
             building the org, the processes, and the platform (RIOS) so the
             businesses run without me as a single point of failure. My
-            partner co-operates them with a fully capable team behind her;
+            partner co-runs them with a fully capable team behind her;
             the day-to-day continues whether I&rsquo;m involved or not.
             Stepping back from operations was the goal. That work is done.
             Anthropic was attractive to me a year ago too &mdash; the timing
@@ -42,7 +42,11 @@ export function WhyAnthropic() {
             platform coordination, the operational layer underneath all of it.
             And Anthropic itself is, by almost any measure, one of the most
             attractive places in tech right now &mdash; the work, the team,
-            and the trajectory all line up. It&rsquo;s one of the few companies
+            and the trajectory all line up. I&rsquo;ve been using Claude as a
+            daily operator across my businesses, and the rate of capability
+            gains release-over-release has been hard to look away from &mdash;
+            it&rsquo;s rare to watch a product redefine what&rsquo;s possible
+            this quickly. It&rsquo;s one of the few companies
             whose work I&rsquo;d want to be inside of regardless of role; if a
             different growth opportunity at Anthropic fit better than this one,
             I&rsquo;d be open to that conversation too.

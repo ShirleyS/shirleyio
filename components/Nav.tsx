@@ -7,7 +7,7 @@ const links = [
   { href: "#why", label: "Why I'm here" },
   { href: "#experience", label: "Experience" },
   { href: "#chapter", label: "Chapter II" },
-  { href: "#systems", label: "Systems" },
+  { href: "#systems", label: "Builds" },
 ];
 
 export function Nav() {
