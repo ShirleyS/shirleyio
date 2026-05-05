@@ -3,7 +3,7 @@ import { Targeted, ROLE } from "@/components/Targeted";
 const overlap: Array<{ jd: string; me: string }> = [
   {
     jd: "Marketing Measurement Intelligence — MMM, incrementality, brand lift, attribution",
-    me: "A decade in measurement infrastructure: ABM attribution at Demandbase, identity and enrichment at Clearbit, lifecycle reporting at Oracle Marketing Cloud — and operational measurement systems I&rsquo;ve built from zero across five live businesses.",
+    me: "A decade in measurement infrastructure: attribution at Demandbase, identity and enrichment at Clearbit, lifecycle reporting at Oracle Marketing Cloud, and operational measurement systems I&rsquo;ve built from zero across five live businesses. Strongest on attribution and the data layer underneath measurement; less hands-on with MMM and incrementality testing &mdash; the kind of gap I&rsquo;d expect to close in the first quarter on the job, not pretend isn&rsquo;t there.",
   },
   {
     jd: "MarTech Infrastructure & Vendor Management — strategic platform assessments, vendor relationships, governance",
@@ -52,6 +52,22 @@ export function Closing() {
               The four responsibility lines from the JD, mapped to the closest
               evidence in my actual experience.
             </p>
+
+            <div className="mt-7 border-l border-[var(--color-line-strong)] pl-5">
+              <div className="mono mb-2 text-[10px] uppercase tracking-[0.18em] text-[var(--color-accent)]">
+                On the title
+              </div>
+              <p className="max-w-[44ch] text-[14.5px] leading-[1.65] text-[var(--color-ink-2)]">
+                Solutions Architecture and TPM are the same job in different
+                uniforms. At Clearbit I owned cross-functional programs
+                end-to-end &mdash; integration launches with partners and
+                vendors, customer-facing technical projects with hard
+                dependencies on Engineering, Product, Sales, and CS, and the
+                executive reporting cadences that came with running
+                implementations across thousands of accounts. The work is
+                program management; the title was Solutions Architecture.
+              </p>
+            </div>
           </div>
 
           <ol className="md:col-span-7">
