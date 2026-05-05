@@ -1,7 +1,7 @@
 const overlap: Array<{ jd: string; me: string }> = [
   {
     jd: "Trusted technical advisor through the Claude adoption journey — partner with Account Executives, translate startup requirements into technical solutions, support evaluation through deployment and expansion",
-    me: "Embedded technical advisor has been the job since 2014. At Demandbase as Solutions Engineering Lead, at Clearbit running the SA / CSE org for tier-one accounts (Stripe, Slack, Meta, Intercom, Unity, Segment in their growth-stage years). Same shape every time: sit in the technical scoping calls with the AE, translate the customer&rsquo;s requirement into a solution that ships, stay close through evaluation, deployment, and expansion. AE partnership was something I did daily &mdash; reps trusted me to be in the room because that&rsquo;s where deals were won or lost.",
+    me: "Embedded technical advisor has been the job since 2014. At Demandbase as Solutions Engineering Lead, at Clearbit running both the SA and CSE org for tier-one accounts (Stripe, Slack, Meta, Intercom, Unity, Segment in their growth-stage years). Owning both pre-sales and post-sales technical work meant the sales conversations had to scope solutions my own team could actually deliver &mdash; no overclaiming, no half-baked architecture promises in the scoping call. AE partnership was daily work: reps trusted me in the room because what I committed to in pre-sales shipped without surprises post-close.",
   },
   {
     jd: "Win technical evaluations — help startups develop evaluation frameworks to measure Claude's performance for their specific use cases",
@@ -42,22 +42,24 @@ export function Closing() {
             <span className="inline-block h-1.5 w-1.5 rounded-full bg-[var(--color-accent)]" />
             <span>On the fit</span>
           </div>
-          <p className="serif max-w-[78ch] text-[16px] leading-[1.65] text-[var(--color-ink-2)] md:text-[17px]">
-            This role is the cleanest match in my career to date. Solutions
-            Architecture is the title I&rsquo;ve held for a decade &mdash;
-            at Vero (Series A), Demandbase (mid-stage), and Clearbit (Series
-            A through HubSpot acquisition). All three were exactly the kind
-            of growth-stage technology company the JD describes as customer
-            audience. I&rsquo;ve sat in the technical scoping calls with
-            founding engineers; I&rsquo;ve defended the platform in
-            competitive bake-offs; I&rsquo;ve negotiated architecture
-            trade-offs with stakeholders who didn&rsquo;t have time for
-            ceremony. And for the last two years I&rsquo;ve been operating
-            from the founder side of the same conversation &mdash; running
-            five live businesses on systems I built with Claude, which means
-            I bring practitioner credibility most architect candidates
-            can&rsquo;t: not just product knowledge, but production scars
-            from being the customer.
+          <p className="serif text-[16px] leading-[1.65] text-[var(--color-ink-2)] md:text-[17px]">
+            Solutions Architect for a decade at Demandbase and Clearbit
+            (Series A through HubSpot acquisition) &mdash; exactly the
+            kind of growth-stage tech companies the JD describes as
+            customer audience. At Clearbit I was Head of Solutions Architecture
+            and Customer Success Engineering, owning both pre-sales
+            and post-sales technical work end-to-end. That ownership
+            forced a level of detail in the sales cycle pure pre-sales
+            teams don&rsquo;t carry &mdash; every scoping commitment had
+            to be one my own delivery team could honor. Recently I&rsquo;ve shipped three production AI systems with
+            Claude &mdash; RIOS, CasaRuta, and CapitalRuta &mdash;
+            building the same architectural patterns
+            Anthropic&rsquo;s startup customers face. I also run five food
+            and beverage businesses in CDMX with my partner; the operator
+            chair is what taught me what production reality actually
+            demands of a system. That&rsquo;s the combination I&rsquo;d
+            bring on day one &mdash; full-lifecycle ownership at
+            growth-stage tech, plus practitioner-level Claude experience.
           </p>
         </div>
 

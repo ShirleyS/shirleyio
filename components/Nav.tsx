@@ -8,6 +8,7 @@ const links = [
   { href: "#systems", label: "Builds" },
   { href: "#experience", label: "Experience" },
   { href: "#chapter", label: "The Detour" },
+  { href: "#coda", label: "Coming back" },
 ];
 
 export function Nav() {

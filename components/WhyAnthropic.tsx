@@ -23,8 +23,8 @@ export function WhyAnthropic() {
 
         <div className="prose-editorial md:col-span-8">
           <p>
-            On the obvious question first &mdash; yes, I have been supporting
-            five active businesses. The reason I can step into a full-time role
+            On the obvious question first &mdash; yes, I have been busy
+            building and supporting five businesses in Mexico City. The reason I can step into a full-time role
             now is that the last two years of work have been about exactly
             that: building the org, the processes, and the platform (RIOS)
             so the businesses run without me as a single point of failure.
@@ -38,11 +38,10 @@ export function WhyAnthropic() {
           <p>
             What pulled me toward Anthropic is twofold. This role in particular
             reads like an unusual fit with the work I&rsquo;ve actually done
-            &mdash; pre-sales Solutions Architecture for growth-stage tech
-            customers, founder-led technical conversations, evaluation
-            framework design for AI products, and the architectural advisory
-            work that lives between technical evaluation and production
-            deployment. And Anthropic itself is, by almost
+            &mdash; pre-sales Solutions Architecture and post-sales engineering
+            ownership for growth-stage tech customers, founder-led technical
+            conversations, and the architectural advisory work that lives
+            between technical evaluation and production deployment. And Anthropic itself is, by almost
             any measure, one of the most attractive places in tech right now
             &mdash; the work, the team, and the trajectory all line up.
             I&rsquo;ve been using Claude as a daily operator across my

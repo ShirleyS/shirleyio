@@ -61,7 +61,7 @@ export const projects: Project[] = [
     ],
     impact: [
       "Month-end close happens in real time instead of after a three-week wait — books are continuous, not retrospective.",
-      "Customers cut waste 5% in the first month, driven by real-time margin and cost alerting.",
+      "We cut waste 5% in the first month, driven by real-time margin and cost alerting.",
       "AI extracts invoices (CFDIs, PDFs, XMLs) and matches them to bank deposits and POS sales — manual reconciliation is gone. For us, that&rsquo;s two full-time jobs eliminated.",
       "Payroll and labor-cost-as-percent-of-revenue tracked continuously per location, not at the end of the period.",
       "Multi-entity, multi-brand, multi-location P&amp;L in one engine — plug a new business in and the executive layer is online in days.",

@@ -10,7 +10,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden px-6 pb-8 pt-20 sm:px-8 md:pb-10 md:pt-20 lg:pt-24"
+      className="relative overflow-hidden px-5 pb-8 pt-14 sm:px-8 md:pb-10 md:pt-20 lg:pt-24"
     >
       <div className="mx-auto w-full max-w-[1080px]">
         {/* Role-target strip */}
@@ -28,13 +28,13 @@ export function Hero() {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.05, ease }}
-          className="mono mb-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] uppercase tracking-[0.18em] text-[var(--color-subtle)]"
+          className="mono mb-6 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-[10px] uppercase tracking-[0.16em] text-[var(--color-subtle)] md:gap-x-4 md:text-[11px] md:tracking-[0.18em]"
         >
           <span>Based in Mexico City</span>
-          <span className="text-[var(--color-line-strong)]">/</span>
+          <span className="hidden text-[var(--color-line-strong)] md:inline">/</span>
           <span>10 yrs at growth-stage startups · Operator-founder · Daily Claude builder</span>
-          <span className="text-[var(--color-line-strong)]">/</span>
-          <span>Open to travel or relocation — SF, NYC</span>
+          <span className="hidden text-[var(--color-line-strong)] md:inline">/</span>
+          <span>Open to travel — SF, NYC</span>
         </motion.div>
 
         {/* Headline + portrait */}
@@ -44,12 +44,13 @@ export function Hero() {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.05, ease }}
-              className="serif text-[clamp(2.2rem,5vw,3.8rem)] font-normal leading-[1.05] tracking-[-0.02em] text-[var(--color-ink)]"
+              className="serif text-[clamp(1.75rem,2.6vw,2.1rem)] font-normal leading-[1.18] tracking-[-0.015em] text-[var(--color-ink)]"
             >
-              A decade of Solutions Architecture for growth-stage tech teams
-              &mdash;{" "}
-              <span className="italic text-[var(--color-ink-2)]">
-                and five live businesses running on systems I built with Claude.
+              <span className="block">
+                Solutions Architect for growth-stage startups.
+              </span>
+              <span className="block italic text-[var(--color-ink-2)]">
+                Now shipping three production AI systems with Claude.
               </span>
             </motion.h1>
 
@@ -57,24 +58,17 @@ export function Hero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.18, ease }}
-              className="mt-4 max-w-[60ch] text-[16.5px] leading-[1.6] text-[var(--color-muted)] md:text-[17.5px]"
+              className="mt-5 max-w-[68ch] text-[15.5px] leading-[1.65] text-[var(--color-muted)] md:text-[16.5px]"
             >
-              I&rsquo;m Shirley. I&rsquo;ve spent a decade as a pre-sales
-              Solutions Architect and Customer Success Engineering leader at{" "}
-              <span className="text-[var(--color-ink)]">Vero</span>{" "}
-              <span className="text-[var(--color-subtle)]">(Series A)</span>,{" "}
-              <span className="text-[var(--color-ink)]">Demandbase</span>, and{" "}
+              I&rsquo;m Shirley. Pre-sales SA and CSE leadership at{" "}
+              <span className="text-[var(--color-ink)]">Demandbase</span>{" "}
+              and{" "}
               <span className="text-[var(--color-ink)]">Clearbit</span>{" "}
               <span className="text-[var(--color-subtle)]">(acq. HubSpot)</span>
-              &mdash; supporting growth-stage technology customers (Stripe,
-              Slack, Meta, Intercom, Unity, Segment) through their build and
-              scale phases. For the last two years I&rsquo;ve been a
-              founder-operator running{" "}
-              <span className="text-[var(--color-ink)]">five live businesses</span>{" "}
-              on systems I architected and built{" "}
-              <span className="text-[var(--color-ink)]">with Claude</span>
-              &mdash; which means I walk into the role with practitioner
-              credibility, not just product knowledge.
+              &mdash; tier-one customers Stripe, Slack, Meta, Intercom, Segment.
+              Today, in CDMX: five live businesses and AI-native systems I
+              ship with{" "}
+              <span className="text-[var(--color-ink)]">Claude</span> daily.
             </motion.p>
 
             <motion.div
@@ -99,7 +93,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.1, delay: 0.4, ease }}
-            className="relative md:col-span-3"
+            className="relative mx-auto max-w-[180px] md:col-span-3 md:mx-0 md:max-w-none"
           >
             <Portrait />
           </motion.div>
@@ -116,7 +110,7 @@ export function Hero() {
             <div className="mono mb-3.5 text-[10.5px] uppercase tracking-[0.2em] text-[var(--color-subtle)]">
               Growth-stage tech companies shipped to / supported
             </div>
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-2.5 text-[var(--color-muted)]">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[var(--color-muted)] md:gap-x-6 md:gap-y-2.5">
               {[
                 "Stripe",
                 "Slack",
@@ -141,7 +135,7 @@ export function Hero() {
               ].map((c) => (
                 <span
                   key={c}
-                  className="serif text-[15px] tracking-tight text-[var(--color-ink-2)]/70 transition-colors hover:text-[var(--color-ink)]"
+                  className="serif text-[13px] tracking-tight text-[var(--color-ink-2)]/70 transition-colors hover:text-[var(--color-ink)] md:text-[15px]"
                 >
                   {c}
                 </span>
@@ -153,9 +147,8 @@ export function Hero() {
             <div className="mono mb-3.5 text-[10.5px] uppercase tracking-[0.2em] text-[var(--color-subtle)]">
               Platforms shipped against
             </div>
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-2.5 text-[var(--color-muted)]">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[var(--color-muted)] md:gap-x-6 md:gap-y-2.5">
               {[
-                "Anthropic API / Claude SDK",
                 "Salesforce",
                 "HubSpot",
                 "Marketo",
@@ -176,7 +169,7 @@ export function Hero() {
               ].map((p) => (
                 <span
                   key={p}
-                  className="serif text-[15px] tracking-tight text-[var(--color-ink-2)]/70 transition-colors hover:text-[var(--color-ink)]"
+                  className="serif text-[13px] tracking-tight text-[var(--color-ink-2)]/70 transition-colors hover:text-[var(--color-ink)] md:text-[15px]"
                 >
                   {p}
                 </span>
