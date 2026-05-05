@@ -193,6 +193,7 @@ function JDMap({
   project,
   note,
   slug,
+  url,
   active,
   onSelect,
 }: {
@@ -200,16 +201,24 @@ function JDMap({
   project: string;
   note: string;
   slug: string;
+  url?: string;
   active: boolean;
   onSelect: (slug: string) => void;
 }) {
   return (
-    <button
-      type="button"
+    <div
+      role="button"
+      tabIndex={0}
       onClick={() => onSelect(slug)}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          onSelect(slug);
+        }
+      }}
       aria-pressed={active}
       className={cn(
-        "group block w-full text-left rounded-[var(--radius-md)] border bg-[var(--color-bg-elevated)] p-5 shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-lift)]",
+        "group block w-full cursor-pointer rounded-[var(--radius-md)] border bg-[var(--color-bg-elevated)] p-5 text-left shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-lift)]",
         active
           ? "border-[var(--color-accent)]/60 ring-1 ring-[var(--color-accent)]/30"
           : "border-[var(--color-line)] hover:border-[var(--color-line-strong)]",
@@ -226,6 +235,18 @@ function JDMap({
       <p className="mt-2.5 text-[13.5px] leading-[1.6] text-[var(--color-muted)]">
         {note}
       </p>
-    </button>
+      {url && (
+        <a
+          href={url}
+          target="_blank"
+          rel="noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className="mono mt-3 inline-flex items-center gap-1 text-[10.5px] uppercase tracking-[0.18em] text-[var(--color-ink-2)] transition-colors hover:text-[var(--color-accent)]"
+        >
+          {url.replace(/^https?:\/\//, "")}
+          <span aria-hidden className="text-[var(--color-subtle)]">↗</span>
+        </a>
+      )}
+    </div>
   );
 }
