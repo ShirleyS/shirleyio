@@ -19,8 +19,7 @@ export const projects: Project[] = [
     name: "RIOS",
     status: "In production",
     url: "https://riosuno.com",
-    jdArea: "Measurement Intelligence",
-    tagline: "Operational intelligence for a multi-location hospitality portfolio",
+    tagline: "Operational intelligence for a multi-location food and beverage portfolio",
     oneLiner:
       "An executive dashboard and data-completeness layer that unifies POS, inventory, and accounting signal across five operating businesses.",
     problem:
@@ -29,7 +28,7 @@ export const projects: Project[] = [
       {
         layer: "Ingestion",
         detail:
-          "Vendor adapters (Parrot POS and others) backfill historical windows on a rolling cursor and watch for late-arriving rows. Every ingestion run is logged, idempotent, and replayable.",
+          "Vendor adapters (POS and PDF/CSV imports) backfill historical windows on a rolling cursor and watch for late-arriving rows. Every ingestion run is logged and safe to re-run — running the same job twice produces the same result, never duplicate data.",
       },
       {
         layer: "Completeness",
@@ -44,7 +43,7 @@ export const projects: Project[] = [
       {
         layer: "Executive layer",
         detail:
-          "A small, opinionated set of executive views — daily revenue and trend, ticket size, item mix, labor against forecast, supplier variance — built around what an operator actually decides on, not what&rsquo;s easy to chart.",
+          "A small, opinionated set of executive views — daily revenue and trend, ticket size, item mix, labor against forecast, supplier variance — built around what an operator actually decides on, not what's easy to chart.",
       },
       {
         layer: "Agent layer",
@@ -56,14 +55,16 @@ export const projects: Project[] = [
     stack: [
       "Next.js · TypeScript",
       "Postgres / warehouse",
-      "Parrot POS API",
+      "POS API",
       "Claude (Anthropic)",
       "Vercel",
     ],
     impact: [
-      "Reporting variance across systems collapsed from days of reconciliation to a labeled exception per shift.",
-      "Operator decisions on staffing and ordering now happen against trustworthy daily data, not week-old PDFs.",
-      "Same engine — plug a new business in, and the executive layer is online in days.",
+      "Month-end close happens in real time instead of after a three-week wait — books are continuous, not retrospective.",
+      "Customers cut waste 5% in the first month, driven by real-time margin and cost alerting.",
+      "AI extracts invoices (CFDIs, PDFs, XMLs) and matches them to bank deposits and POS sales — manual reconciliation is gone. For us, that&rsquo;s two full-time jobs eliminated.",
+      "Payroll and labor-cost-as-percent-of-revenue tracked continuously per location, not at the end of the period.",
+      "Multi-entity, multi-brand, multi-location P&amp;L in one engine — plug a new business in and the executive layer is online in days.",
     ],
   },
   {
@@ -85,6 +86,11 @@ export const projects: Project[] = [
           "104 products across 30 institutions in 6 categories, expressed against one schema — interest rate, CAT, LTV, down payment, tenor — so comparison is structurally honest, not editorially flattened.",
       },
       {
+        layer: "Monthly refresh",
+        detail:
+          "A cron job runs once a month, re-pulls each institution's published rates and product terms, reconciles against the prior snapshot, and surfaces drift as an exception — so the catalog stays honest without anyone manually re-checking 30 banks every month.",
+      },
+      {
         layer: "Eligibility matcher",
         detail:
           "22 buyer-profile fields evaluated against per-product eligibility rules. Outputs a pass/fail per product with the specific reason, not a black-box score.",
@@ -97,20 +103,19 @@ export const projects: Project[] = [
       {
         layer: "Programmatic content surface",
         detail:
-          "330 sitemap URLs, 24 mortgage-type pages, 33 SEO segments, 12 bilingual guides for foreigners — the discovery layer that gets buyers to the eligibility engine in the first place.",
+          "330 sitemap URLs, 24 mortgage-type pages, 33 SEO segments — the discovery layer that gets buyers to the eligibility engine in the first place.",
       },
       {
-        layer: "Accounts + payments",
+        layer: "Accounts + data",
         detail:
-          "Supabase auth and data, Stripe for subscription tiers, Netlify functions for webhooks. The unglamorous half of any product that handles money.",
+          "Supabase auth and data, Netlify functions for webhooks. The unglamorous half of any product that handles a structured user profile.",
       },
     ],
-    ai: "Deliberately none. An eligibility outcome shown to a borrower has to be auditable, explainable, and stable across runs — that&rsquo;s a deterministic problem, not a probabilistic one. The interesting AI work here is upstream (research, normalization tooling) rather than in the user-facing decision.",
+    ai: "Used upstream, not in the user-facing decision. Agents crawled the public web — bank product pages, Infonavit and FOVISSSTE documentation, SOFOM and fintech disclosures — to assemble the 104-product catalog and keep it normalized against one schema. The eligibility outcome shown to a borrower stays deterministic: it has to be auditable, explainable, and stable across runs.",
     stack: [
       "React 18 · Vite · TypeScript",
       "Tailwind v4",
       "Supabase (Postgres + auth)",
-      "Stripe",
       "Netlify",
     ],
     impact: [
@@ -143,6 +148,11 @@ export const projects: Project[] = [
           "Static seed catalog plus a Supabase layer of approved diffs (provider_edits) — so providers can update their listings without forking the source of truth.",
       },
       {
+        layer: "Monthly refresh",
+        detail:
+          "A monthly cron job sweeps each provider for changes — APRs, eligibility windows, ticket sizes, approval timelines — and writes deltas back through the hybrid data model. The static catalog stays fresh without provider-side effort, and approved diffs flow through the same path.",
+      },
+      {
         layer: "Eligibility + fit",
         detail:
           "Phase-1 rules engine: revenue, months in business, entity type, bureau requirement. Fit ranking weights accessibility, cost, speed, and approval probability.",
@@ -152,18 +162,12 @@ export const projects: Project[] = [
         detail:
           "Buyer, provider, and admin dashboards — applications, lead routing, claims, reviews, analytics. Multi-tenant from day one because the operating model required it.",
       },
-      {
-        layer: "Probabilistic layer (planned)",
-        detail:
-          "Phase 2/3 introduces approval-probability heuristics and external data signals (SAT, bureau, bank-connection). Designed so the deterministic eligibility layer stays the foundation and the probabilistic layer sits on top — never as a fallback when the rules are unclear.",
-      },
     ],
-    ai: "Deliberately none, today. Same reasoning as CasaRuta: an eligibility answer shown to a small-business owner has to be auditable. The AI layer is sequenced — it gets introduced where the underlying problem is genuinely probabilistic (approval likelihood, signal scoring) rather than as a shortcut around the rule-based work.",
+    ai: "Used upstream, not in the user-facing decision. Agents crawled the public web — bank, fintech, government program, factoring, and equity provider sources — to assemble the multi-category catalog across 10+ institution types. The eligibility answer shown to a small-business owner stays deterministic. The probabilistic AI layer (approval likelihood, signal scoring) is sequenced for later, where the underlying problem is genuinely probabilistic — never as a shortcut around the rule-based work.",
     stack: [
       "React 18 · Vite · TypeScript",
       "Tailwind v4 · Radix UI",
       "Supabase (Postgres + auth)",
-      "Stripe",
       "Netlify",
     ],
     impact: [

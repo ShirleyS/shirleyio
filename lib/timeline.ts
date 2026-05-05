@@ -27,8 +27,8 @@ export const timeline: TimelineEntry[] = [
       "CRM + MAP architecture",
     ],
     surface:
-      "Stood up Customer Success Engineering and Support Engineering as net-new functions covering four product surfaces — Salesforce package, APIs, native integrations, platform — and the internal/external success metrics, customer development, and escalation pathways that feed each of them into product strategy. Five years of running that operating layer.",
-    customers: ["Stripe", "Slack", "Intercom", "Facebook", "Unity", "Zendesk"],
+      "Stood up Customer Success Engineering and Support Engineering as net-new functions covering four product surfaces — Salesforce package, APIs, native integrations, platform — and the internal/external success metrics, customer development, and escalation pathways that feed each of them into product strategy. Across five years, our teams supported <strong>over a thousand SMB, mid-market, and enterprise customers</strong> — plus the prospects in active sales cycles who needed engineering depth before they&rsquo;d sign.",
+    customers: ["Intercom", "Meta", "Slack", "Stripe", "Twilio", "Unity"],
     detail:
       "The interesting part was the operating layer underneath the org chart: how a CSE escalation became a product signal, how a partner integration became a renewal lever, how a quiet metric in the platform exposed a coverage gap nobody had named yet. Five years of running that layer is what taught me what TPM work actually feels like.",
   },
@@ -50,8 +50,8 @@ export const timeline: TimelineEntry[] = [
       "Tag Management",
     ],
     surface:
-      "Shipped internal tooling I still think fondly about &mdash; including an <strong>industry-first real-time sales alerting system that revealed previously anonymous B2B web traffic to reps in the moment</strong> (JS + Slack), a Python/Rails data research tool, a Ruby/Rails central sales scoping tool, and Rails/JS event tracking against GA. The pattern was always the same: find the manual loop, instrument it, then automate the part that&rsquo;s safe to automate.",
-    customers: ["Adobe", "Accenture", "AWS", "Deloitte", "Visa"],
+      "Built and shipped internal tooling I&rsquo;m still proud of &mdash; including an <strong>industry-first real-time sales alerting system that surfaced previously anonymous B2B web visitors to reps the moment they landed</strong> (JS + Slack), a Python/Rails research tool, a Ruby/Rails sales scoping tool, and Rails/JS event tracking into GA. Same pattern every time: find a manual loop sales or marketing was running by hand, make the work visible, then automate the part that was safe to automate.",
+    customers: ["Accenture", "Adobe", "AWS", "Databricks", "Deloitte", "McKinsey", "Visa"],
     detail:
       "This is where I learned that &ldquo;solutions engineering&rdquo; in enterprise martech is, functionally, applied program management — you&rsquo;re sequencing technical change across three or four teams that don&rsquo;t share a roadmap, and the reporting layer is what holds the whole thing together.",
   },

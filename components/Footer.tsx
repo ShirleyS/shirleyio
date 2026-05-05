@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="relative border-t border-[var(--color-line)] px-6 py-16 sm:px-8 md:py-20">
+    <footer className="relative border-t border-[var(--color-line)] px-6 py-12 sm:px-8 md:py-14">
       <div className="mx-auto w-full max-w-[1080px]">
         <div className="grid gap-12 md:grid-cols-12 md:gap-10">
           <div className="md:col-span-6">
@@ -26,16 +26,6 @@ export function Footer() {
               Elsewhere
             </div>
             <ul className="space-y-2.5 text-[14.5px]">
-              <li>
-                <a
-                  href="https://github.com/shirleys"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="link text-[var(--color-ink-2)]"
-                >
-                  github.com/shirleys
-                </a>
-              </li>
               <li>
                 <a
                   href="https://linkedin.com/in/shirleyshaw"
@@ -71,7 +61,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mono mt-16 flex flex-wrap items-center justify-between gap-3 border-t border-[var(--color-line)] pt-6 text-[10.5px] uppercase tracking-[0.18em] text-[var(--color-subtle)]">
+        <div className="mono mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-[var(--color-line)] pt-5 text-[10.5px] uppercase tracking-[0.18em] text-[var(--color-subtle)]">
           <span>© {new Date().getFullYear()} Shirley Shaw</span>
           <span className="flex items-center gap-2">
             <span className="inline-block h-1 w-1 rounded-full bg-[var(--color-accent)]" />

@@ -15,51 +15,35 @@ export function Systems() {
     <Section id="systems" className="border-t border-[var(--color-line)]">
       <Eyebrow index="05" label="Selected Systems" />
 
-      <div className="mt-10 md:mt-14">
+      <div className="mt-7 md:mt-10">
         <h2 className="serif max-w-[26ch] text-[clamp(2rem,3.8vw,3rem)] font-normal leading-[1.05] tracking-[-0.018em] text-[var(--color-ink)]">
-          Three production systems.{" "}
-          <span className="text-[var(--color-muted)]">
-            One per responsibility line on the JD.
-          </span>
+          Three production systems.
         </h2>
         <div className="mt-7 grid gap-6 md:grid-cols-3 md:gap-7">
           <JDMap
-            area="Measurement Intelligence"
             project="RIOS"
+            slug="rios"
+            active={active === "rios"}
+            onSelect={setActive}
             note="Measurement and reporting infrastructure across five operating businesses — completeness, reconciliation, and the executive layer that makes the numbers actionable."
           />
           <JDMap
             area="MarTech Infrastructure"
             project="CasaRuta"
-            note="A normalized product catalog, eligibility schema, and programmatic surface — the platform-shaped work of comparing 104 mortgage products on common keys."
+            slug="casaruta"
+            active={active === "casaruta"}
+            onSelect={setActive}
+            note="A normalized product catalog, eligibility schema, and programmatic surface — the platform-shaped work of comparing 104 mortgage products across a standardized set of attributes."
           />
           <JDMap
             area="Workflow Automation"
             project="CapitalRuta"
-            note="A capital matching layer sequenced deliberately so the deterministic foundation stays in place when the probabilistic underwriting layer arrives."
+            slug="capitalruta"
+            active={active === "capitalruta"}
+            onSelect={setActive}
+            note="A capital matching layer for Mexican SMBs. Rule-based today; the AI underwriting layer comes later, sitting on top of the rules that already work — not in place of them."
           />
         </div>
-      </div>
-
-      {/* Tabs */}
-      <div className="mt-12 flex flex-wrap gap-1.5 border-b border-[var(--color-line)] pb-3">
-        {projects.map((p) => (
-          <button
-            key={p.slug}
-            onClick={() => setActive(p.slug)}
-            className={cn(
-              "group relative rounded-full px-4 py-2 text-[13px] tracking-tight transition-colors",
-              active === p.slug
-                ? "bg-[var(--color-ink)] text-[var(--color-bg)]"
-                : "text-[var(--color-muted)] hover:text-[var(--color-ink)]",
-            )}
-          >
-            <span className="serif">{p.name}</span>
-            <span className="mono ml-2.5 text-[10px] uppercase tracking-[0.14em] opacity-70">
-              {p.status}
-            </span>
-          </button>
-        ))}
       </div>
 
       <AnimatePresence mode="wait">
@@ -69,7 +53,7 @@ export function Systems() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -4 }}
           transition={{ duration: 0.35, ease: [0.2, 0.65, 0.3, 0.95] }}
-          className="mt-10"
+          className="mt-7"
         >
           {/* Header card */}
           <div className="grid gap-8 rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-bg-elevated)] p-7 shadow-[var(--shadow-soft)] md:grid-cols-12 md:gap-10 md:p-10">
@@ -84,7 +68,7 @@ export function Systems() {
                   <>
                     <span className="h-px w-6 bg-[var(--color-line-strong)]" />
                     <span className="rounded-full border border-[var(--color-accent)]/40 bg-[var(--color-accent)]/8 px-2 py-0.5 text-[var(--color-accent)]">
-                      JD · {project.jdArea}
+                      {project.jdArea}
                     </span>
                   </>
                 )}
@@ -127,7 +111,7 @@ export function Systems() {
           </div>
 
           {/* Architecture */}
-          <div className="mt-10 grid gap-10 md:grid-cols-12">
+          <div className="mt-7 grid gap-8 md:grid-cols-12">
             <div className="md:col-span-7">
               <div className="mono mb-5 flex items-center gap-3 text-[10.5px] uppercase tracking-[0.2em] text-[var(--color-subtle)]">
                 <span>Architecture</span>
@@ -207,22 +191,40 @@ function JDMap({
   area,
   project,
   note,
+  slug,
+  active,
+  onSelect,
 }: {
-  area: string;
+  area?: string;
   project: string;
   note: string;
+  slug: string;
+  active: boolean;
+  onSelect: (slug: string) => void;
 }) {
   return (
-    <div className="group rounded-[var(--radius-md)] border border-[var(--color-line)] bg-[var(--color-bg-elevated)] p-5 shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--color-line-strong)] hover:shadow-[var(--shadow-lift)]">
-      <div className="mono mb-2 text-[10px] uppercase tracking-[0.18em] text-[var(--color-accent)]">
-        JD · {area}
-      </div>
+    <button
+      type="button"
+      onClick={() => onSelect(slug)}
+      aria-pressed={active}
+      className={cn(
+        "group block w-full text-left rounded-[var(--radius-md)] border bg-[var(--color-bg-elevated)] p-5 shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-lift)]",
+        active
+          ? "border-[var(--color-accent)]/60 ring-1 ring-[var(--color-accent)]/30"
+          : "border-[var(--color-line)] hover:border-[var(--color-line-strong)]",
+      )}
+    >
+      {area && (
+        <div className="mono mb-2 text-[10px] uppercase tracking-[0.18em] text-[var(--color-accent)]">
+          {area}
+        </div>
+      )}
       <div className="serif text-[18px] tracking-tight text-[var(--color-ink)]">
         {project}
       </div>
       <p className="mt-2.5 text-[13.5px] leading-[1.6] text-[var(--color-muted)]">
         {note}
       </p>
-    </div>
+    </button>
   );
 }

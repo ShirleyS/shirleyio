@@ -7,7 +7,7 @@ const overlap: Array<{ jd: string; me: string }> = [
   },
   {
     jd: "MarTech Infrastructure & Vendor Management — strategic platform assessments, vendor relationships, governance",
-    me: "Implementations and migrations across Eloqua, Marketo, Adobe Analytics, Google Analytics, Optimizely, tag management, and the major CDPs &mdash; including the operational layer of vendor coordination, support, and post-launch health.",
+    me: "Implementations and migrations across Salesforce, Eloqua, Marketo, Adobe Analytics, Google Analytics, Google AdWords, Facebook Ads, Optimizely, tag management, and many more sales and martech solutions &mdash; plus sales engineering evaluations of new systems and the operational layer of vendor coordination, support, and post-launch health across thousands of customer implementations I&rsquo;ve supported directly or indirectly through my team.",
   },
   {
     jd: "Marketing Workflow Automation — AI-powered automation, governance frameworks, impact measurement",
@@ -23,7 +23,7 @@ export function Closing() {
   return (
     <section
       id="apply"
-      className="relative scroll-mt-24 border-t border-[var(--color-line)] px-6 py-16 sm:px-8 md:py-20"
+      className="relative scroll-mt-24 border-t border-[var(--color-line)] px-6 py-12 sm:px-8 md:py-16"
     >
       <div className="mx-auto w-full max-w-[1080px]">
         <div className="mono mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.18em] text-[var(--color-subtle)]">
@@ -42,9 +42,9 @@ export function Closing() {
               href={ROLE.href}
             />
             <h2 className="serif mt-8 text-[clamp(2rem,3.8vw,3rem)] font-normal leading-[1.04] tracking-[-0.018em] text-[var(--color-ink)]">
-              I&rsquo;m applying for one specific role.
+              I&rsquo;m applying for one specific role — here&rsquo;s the JD,
               <span className="block text-[var(--color-muted)]">
-                Here&rsquo;s the overlap, in JD vocabulary.
+                line by line, against my experience.
               </span>
             </h2>
 
