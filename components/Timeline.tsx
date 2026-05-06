@@ -16,7 +16,7 @@ export function Timeline() {
       <div className="mt-7 grid gap-8 md:mt-10 md:grid-cols-12">
         <div className="md:col-span-4">
           <h2 className="serif text-[clamp(1.9rem,3.6vw,2.8rem)] font-normal leading-[1.08] tracking-[-0.018em] text-[var(--color-ink)]">
-            Ten years building, integrating, and deploying the tools sales,
+            Ten plus years building, integrating, and deploying the tools sales,
             marketing, and revenue teams rely on. 
             </h2>
             <br></br>
@@ -64,10 +64,13 @@ export function Timeline() {
                       setOpen(isOpen ? null : entry.company)
                     }
                     className={cn(
-                      "group block w-full cursor-pointer border-b py-5 text-left transition-colors duration-300",
+                      "group block w-full cursor-pointer border-l-2 py-5 pl-3 text-left transition-colors duration-300",
+                      isOpen
+                        ? "border-l-[var(--color-accent)]"
+                        : "border-l-transparent",
                       i === timeline.length - 1
-                        ? "border-transparent"
-                        : "border-[var(--color-line)]",
+                        ? "border-b border-b-transparent"
+                        : "border-b border-b-[var(--color-line)]",
                     )}
                     aria-expanded={isOpen}
                   >

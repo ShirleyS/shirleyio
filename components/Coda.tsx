@@ -20,7 +20,7 @@ export function Coda() {
 
         <div className="md:col-span-7">
           <p className="serif text-[16.5px] leading-[1.65] text-[var(--color-ink-2)] md:text-[17.5px]">
-            Ten years architecting and solutioning for growth-stage tech.
+            Ten plusyears architecting and solutioning for growth-stage tech.
             Operator-founder &mdash; jumped into a foreign country I barely spoke the language of, and built five working businesses out of it.
             Recent work shipping production AI systems with Claude. This
             is the role that brings the three together &mdash; helping
