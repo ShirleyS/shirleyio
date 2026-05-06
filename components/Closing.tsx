@@ -5,7 +5,7 @@ const overlap: Array<{ jd: string; me: string }> = [
   },
   {
     jd: "Win technical evaluations — help startups develop evaluation frameworks to measure Claude's performance for their specific use cases",
-    me: "Running technical evaluations was the core of pre-sales at Clearbit and Demandbase. Tier-one deals always came with a POC &mdash; the customer&rsquo;s own data, their use cases, and the criteria they&rsquo;d accept as proof the product worked. My job was scoping that list with them, instrumenting the test, demonstrating results with evidence rather than slides &mdash; and winning the bake-off when an alternative was sitting in the same eval. A decade of doing that is what I&rsquo;d bring to helping startups define what &lsquo;working&rsquo; looks like for Claude &mdash; and proving it head-to-head when they&rsquo;re evaluating against the field.",
+    me: "Running technical evaluations was the core of pre-sales at Clearbit and Demandbase. Tier-one deals always came with a POC &mdash; the customer&rsquo;s own data, their use cases, and the criteria they&rsquo;d accept as proof the product worked. My job was scoping that list with them, instrumenting the test, demonstrating results with evidence rather than slides &mdash; and winning the bake-off when an alternative was sitting in the same eval. A decade of doing that is what I&rsquo;d bring to helping startups define what &lsquo;working&rsquo; looks like in their own context &mdash; and proving it head-to-head against the alternatives in the same eval.",
   },
   {
     jd: "Build technical credibility with founders, founding engineers, and startup engineering teams — speak their language, understand build patterns, guide architecture decisions",
