@@ -30,7 +30,7 @@ export const timeline: TimelineEntry[] = [
       "Stood up Customer Success Engineering and Support Engineering as net-new functions covering four product surfaces — Salesforce package, APIs, native integrations, platform — and the internal/external success metrics, customer development, and escalation pathways that feed each of them into product strategy. Across five years, our teams supported <strong>over a thousand SMB, mid-market, and enterprise customers</strong> — plus the prospects in active sales cycles who needed engineering depth before they&rsquo;d sign.",
     customers: ["Intercom", "Meta", "Slack", "Stripe", "Twilio", "Unity"],
     detail:
-      "The interesting part was the operating layer underneath the org chart: how a customer&rsquo;s technical evaluation in pre-sales shaped what got built post-sale, how an escalation became a product signal, how owning both sides forced honest scoping &mdash; every commitment I made in the sales cycle had to be one my own delivery team could ship. Five years of running that layer is the closest analog to trusted technical advisory across the full customer journey, from evaluation through production deployment.",
+      "For years, I ran both the pre-sales and post-sales customer engineering organizations at Clearbit &mdash; through implementation, ongoing customer success, and the cross-sell, upsell, and renewal cycles that came after. That structure forces a discipline pure pre-sales teams don&rsquo;t carry: every architecture and scoping commitment made early has to be one the team can honor years into the account. It&rsquo;s the operating model behind real technical advisory: what I sold, my teams had to deliver across the full account lifecycle.",
   },
   {
     company: "Demandbase",
