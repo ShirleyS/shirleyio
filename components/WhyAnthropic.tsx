@@ -33,13 +33,13 @@ export function WhyAnthropic() {
             the day-to-day continues whether I'm involved or not.
             Stepping back from operations was the goal. Anthropic was
             attractive to me a year ago too &mdash; the timing just
-            wasn't right then. It's starting to feel right now.
+            wasn't right then. <em>It's starting to feel right now.</em>
           </p>
 
           <p>
             What pulled me toward Anthropic is twofold. This role in particular
             reads as a distinct match for the work I've actually done
-            &mdash; pre-sales Solutions Architecture and post-sales engineering
+            &mdash; pre-sales Solutions Architecture and post-sales Customer Success Engineering
             ownership for growth-stage and enterprise customers, founder-led technical
             conversations, and the architectural advisory work that lives
             between technical evaluation and production deployment. And Anthropic itself is, by almost

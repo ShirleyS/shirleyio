@@ -17,7 +17,7 @@ export const timeline: TimelineEntry[] = [
     range: "2018 — 2023 · acq. HubSpot 2023",
     location: "San Francisco / Mexico City",
     positioning:
-      "Owned the full pre- and post-sales engineering surface of a B2B data platform — implementations, native integrations, partnerships, platform.",
+      "Owned the full pre- and post-sales customer engineering surface of a B2B data platform — implementations, native integrations, partnerships, platform.",
     systems: [
       "Salesforce package",
       "REST + streaming APIs",
