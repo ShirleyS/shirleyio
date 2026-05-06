@@ -14,7 +14,7 @@ export function WhyAnthropic() {
       <div className="mt-7 grid gap-8 md:mt-10 md:grid-cols-12 md:gap-10">
         <div className="md:col-span-4">
           <h2 className="serif text-[clamp(1.9rem,3.4vw,2.6rem)] font-normal leading-[1.06] tracking-[-0.018em] text-[var(--color-ink)]">
-            I&rsquo;m not actively searching.
+            I'm not actively searching.
           </h2>
           <p className="mono mt-5 text-[11px] uppercase tracking-[0.18em] text-[var(--color-subtle)]">
             The honest version
@@ -23,34 +23,34 @@ export function WhyAnthropic() {
 
         <div className="prose-editorial md:col-span-8">
           <p>
-            First, the obvious: after stepping away from tech, I&rsquo;ve
+            First, the obvious: after stepping away from tech, I've
             been busy building and supporting five businesses in Mexico
-            City. The last couple of years have been about engineering
+            City. It's gone surprisingly well. The last couple of years have been about engineering
             myself out of the day-to-day &mdash; building the org, the
             processes, and the platform (RIOS) so the businesses run
             without me as a single point of failure.
             My partner co-runs them with a fully capable team behind her;
-            the day-to-day continues whether I&rsquo;m involved or not.
+            the day-to-day continues whether I'm involved or not.
             Stepping back from operations was the goal. Anthropic was
             attractive to me a year ago too &mdash; the timing just
-            wasn&rsquo;t right then. It&rsquo;s starting to feel right now.
+            wasn't right then. It's starting to feel right now.
           </p>
 
           <p>
             What pulled me toward Anthropic is twofold. This role in particular
-            reads as a distinct match for the work I&rsquo;ve actually done
+            reads as a distinct match for the work I've actually done
             &mdash; pre-sales Solutions Architecture and post-sales engineering
-            ownership for growth-stage tech customers, founder-led technical
+            ownership for growth-stage and enterprise customers, founder-led technical
             conversations, and the architectural advisory work that lives
             between technical evaluation and production deployment. And Anthropic itself is, by almost
             any measure, one of the most attractive places in tech right now
             &mdash; the work, the team, and the trajectory all line up.
-            I&rsquo;ve been using Claude as a daily operator across my
+            I've been using Claude as a daily operator across my
             businesses, and the rate of capability gains release-over-release
-            has been hard to miss &mdash; it&rsquo;s rare to watch a
-            product redefine what&rsquo;s possible this quickly. The honest pull is the learning curve. Being inside the work at Anthropic &mdash; instead of watching it from the outside &mdash; is the kind of opportunity I haven&rsquo;t had access to in years. I want to be at Anthropic. This role is the
-            cleanest fit; if the team thinks I&rsquo;d land harder somewhere
-            adjacent, I&rsquo;d hear that conversation too.
+            has been hard to miss &mdash; it's rare to watch a
+            product redefine what's possible this quickly. The honest pull is the learning curve. Being inside the work at Anthropic &mdash; instead of watching it from the outside &mdash; is the kind of opportunity I haven't had access to in years. I want to be at Anthropic. This role is the
+            cleanest fit; if the team thinks I'd land harder somewhere
+            adjacent, I'd hear that conversation too.
           </p>
 
           <p>
@@ -64,7 +64,12 @@ export function WhyAnthropic() {
       </div>
 
       {/* Three-criteria strip */}
-      <div className="mt-9 grid grid-cols-1 gap-px overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-line)] bg-[var(--color-line)] sm:grid-cols-3">
+      <div className="mono mt-9 mb-3 flex items-center gap-3 text-[10.5px] uppercase tracking-[0.18em] text-[var(--color-subtle)]">
+        <span className="inline-block h-1.5 w-1.5 rounded-full bg-[var(--color-accent)]" />
+        <span>What I look for in a role</span>
+        <span className="h-px flex-1 bg-[var(--color-line)]" />
+      </div>
+      <div className="grid grid-cols-1 gap-px overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-line)] bg-[var(--color-line)] sm:grid-cols-3">
         {criteria.map((c) => (
           <div
             key={c.n}

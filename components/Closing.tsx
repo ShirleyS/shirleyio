@@ -1,15 +1,15 @@
 const overlap: Array<{ jd: string; me: string }> = [
   {
     jd: "Trusted technical advisor through the Claude adoption journey — partner with Account Executives, translate startup requirements into technical solutions, support evaluation through deployment and expansion",
-    me: "Embedded technical advisor has been the job since 2014. At Demandbase as Solutions Engineering Lead, at Clearbit running both the SA and CSE org for tier-one accounts (Stripe, Slack, Intercom, Segment in their growth-stage years). Owning both pre-sales and post-sales technical work meant the sales conversations had to scope solutions my own team could actually deliver &mdash; no overclaiming, no half-baked architecture promises in the scoping call. AE partnership was daily work: reps trusted me in the room because what I committed to in pre-sales shipped without surprises post-close.",
+    me: "Embedded technical advisor has been the job since 2014. At Clearbit, running both the SA and CSE org for tier-one accounts (Stripe, Slack, Intercom, Segment in their growth-stage years); at Demandbase before that as Solutions Engineering Lead. Owning both pre-sales and post-sales technical work meant the sales conversations had to scope solutions my own team could actually deliver &mdash; no overclaiming, no half-baked architecture promises in the scoping call. AE partnership was daily work: reps trusted me in the room because what I committed to in pre-sales shipped without surprises post-close.",
   },
   {
     jd: "Win technical evaluations — help startups develop evaluation frameworks to measure Claude's performance for their specific use cases",
-    me: "Running technical evaluations was the core of pre-sales at Demandbase and Clearbit. Tier-one deals always came with a POC &mdash; the customer&rsquo;s own data, their use cases, and the criteria they&rsquo;d accept as proof the product worked. My job was scoping that list with them, instrumenting the test, and demonstrating results with evidence rather than slides. A decade of doing that is what I&rsquo;d bring to helping startups define what &lsquo;working&rsquo; looks like for Claude in their context.",
+    me: "Running technical evaluations was the core of pre-sales at Clearbit and Demandbase. Tier-one deals always came with a POC &mdash; the customer&rsquo;s own data, their use cases, and the criteria they&rsquo;d accept as proof the product worked. My job was scoping that list with them, instrumenting the test, demonstrating results with evidence rather than slides &mdash; and winning the bake-off when an alternative was sitting in the same eval. A decade of doing that is what I&rsquo;d bring to helping startups define what &lsquo;working&rsquo; looks like for Claude &mdash; and proving it head-to-head when they&rsquo;re evaluating against the field.",
   },
   {
     jd: "Build technical credibility with founders, founding engineers, and startup engineering teams — speak their language, understand build patterns, guide architecture decisions",
-    me: "I&rsquo;ve been a founder-shaped operator for the last two years and a technical leader at growth-stage startups for a decade before that &mdash; Demandbase (mid-stage), Clearbit (Series A through HubSpot acquisition). The constraints, velocity, and trade-offs early-stage teams make are the constraints I live in daily. And I&rsquo;ve made the architecture calls my own systems needed: where Claude is in the loop and where it isn&rsquo;t, where humans review before anything ships, and what &lsquo;working&rsquo; looks like for each one. Those are the same questions early Claude-native teams are working through.",
+    me: "Guiding integration architecture inside customer tech stacks has been the work for a decade. Salestech and marketing tech has a near-infinite number of stack combinations &mdash; every customer with their own CRM, MAP, CDP, attribution, identity, and warehouse layer. At Clearbit and Demandbase as data providers, my job (directly and through my teams) was navigating that uncertainty and getting our data into the place in the customer&rsquo;s stack where it would deliver the highest value. I imagine the same instinct translates to founder-led architecture conversations with Claude-native teams: meet the stack where it is, advise on what actually works, and ship the version the customer can run.",
   },
   {
     jd: "Hands-on building and deploying LLM-powered applications in production — context engineering, evaluation frameworks, modern AI architectures",
@@ -17,7 +17,7 @@ const overlap: Array<{ jd: string; me: string }> = [
   },
   {
     jd: "Track record selling technical products in competitive markets + strong technical communication for founders and engineering teams",
-    me: "Selling technical solutions has been the job &mdash; closing enterprise deals at Demandbase in head-to-head bake-offs against 6sense, Terminus, and Engagio; defending Clearbit&rsquo;s data layer against ZoomInfo and Apollo in tier-one evaluations. I&rsquo;ve led the data evaluations and product demos in more competitive cycles than I can count, earning trust with founders and engineering teams the way the JD describes &mdash; by understanding what they&rsquo;re building, asking the questions that actually matter, and naming what I&rsquo;d need to learn to do the work well.",
+    me: "Selling technical solutions has been the job &mdash; defending Clearbit&rsquo;s data layer against ZoomInfo and Apollo in tier-one evaluations; closing enterprise deals at Demandbase in head-to-head bake-offs against 6sense, Terminus, and Engagio. I&rsquo;ve led the data evaluations and product demos in more competitive cycles than I can count, earning trust with founders and engineering teams the way the JD describes &mdash; by understanding what they&rsquo;re building, asking the questions that actually matter, and learning fast where the ground is unfamiliar.",
   },
 ];
 
@@ -43,8 +43,8 @@ export function Closing() {
             <span>On the fit</span>
           </div>
           <p className="serif text-[16px] leading-[1.65] text-[var(--color-ink-2)] md:text-[17px]">
-            Solutions Architect for a decade at Demandbase and Clearbit
-            (Series A through HubSpot acquisition) &mdash; exactly the
+            Solutions Architect for a decade at Clearbit (Series A through HubSpot acquisition) and Demandbase
+             &mdash; exactly the
             kind of growth-stage tech companies the JD describes as
             customer audience. At Clearbit I was Head of Solutions Architecture
             and Customer Success Engineering, owning both pre-sales

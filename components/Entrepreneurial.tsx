@@ -1,3 +1,5 @@
+"use client";
+
 import { Section, Eyebrow } from "@/components/ui/Section";
 
 const businesses: Array<{
@@ -5,18 +7,27 @@ const businesses: Array<{
   role: string;
   note: string;
   href?: string;
+  press?: Array<{ label: string; url: string }>;
 }> = [
   {
     name: "Nice Day Coffee",
     role: "Specialty coffee",
     note: "Cuauhtémoc, CDMX",
     href: "https://www.instagram.com/nicedaymx/",
+    press: [
+      { label: "Vogue MX", url: "https://www.vogue.mx/agenda/cultura/articulos/cafes-mas-lindos-cdmx/14486" },
+      { label: "Café con Pan", url: "https://cafeconpan.mx/nice-day-coffee-cuauhtemoc-cdmx/" },
+    ],
   },
   {
     name: "Nice Day Panadería",
     role: "Bakery",
     note: "Roma Norte, CDMX",
     href: "https://www.instagram.com/nicedaymx/",
+    press: [
+      { label: "Food and Pleasure", url: "https://foodandpleasure.com/nice-day-coffee-en-la-roma/" },
+      { label: "Mex Best", url: "https://mex-best.mx/bebidas/2025/01/16/6-nuevas-cafeterias-para-visitar-en-la-cdmx/" },
+    ],
   },
   {
     name: "Bocaza",
@@ -38,18 +49,10 @@ const businesses: Array<{
 ];
 
 const skills = [
-  "Attribution and measurement",
-  "Targeting",
-  "Marketing",
-  "Negotiations",
-  "Sales",
-  "AI-native systems design",
-  "Multi-entity ops architecture",
-  "Planning and Projections",
-  "Prioritization",
-  "Team building",
-  "Operational excellence",
-  "Builder-operator translation",
+  "Analytics and Attribution",
+  "ICP and Targeting",
+  "Forecasting and Modeling",
+  "Sales and Negotiations"
 ];
 
 export function Entrepreneurial() {
@@ -68,7 +71,7 @@ export function Entrepreneurial() {
                 01
               </span>
               <span>
-                Move to a country where you barely speak the language.
+                Pick a country where your vocabulary is roughly &ldquo;hola, gracias, cenicero.&rdquo;
               </span>
             </li>
             <li className="flex gap-3">
@@ -76,8 +79,7 @@ export function Entrepreneurial() {
                 02
               </span>
               <span>
-                Take on a tax code that takes years to learn &mdash; and
-                rewrites itself while you do.
+                Pick a tax code where your coffee comes with an XML.
               </span>
             </li>
             <li className="flex gap-3">
@@ -85,15 +87,14 @@ export function Entrepreneurial() {
                 03
               </span>
               <span>
-                Navigate an employee system you think you know &mdash; but in
-                time realize you have no clue about.
+                Hire one person. Find out &lsquo;at-will employment&rsquo; doesn&rsquo;t translate.
               </span>
             </li>
             <li className="flex gap-3">
               <span aria-hidden className="mono pt-1 text-[11px] text-[var(--color-subtle)]">
                 04
               </span>
-              <span>Make sure it&rsquo;s not tech.</span>
+              <span>Make sure it&rsquo;s not tech. Build the tech for it anyway.</span>
             </li>
           </ul>
         </div>
@@ -152,7 +153,7 @@ export function Entrepreneurial() {
           <span>The portfolio</span>
           <span className="h-px flex-1 bg-[var(--color-line)]" />
           <span className="text-[var(--color-accent)]">
-            Five locations · Operating across CDMX
+            Five locations · Operating across Mexico City
           </span>
         </div>
         <div className="grid grid-cols-2 gap-px overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-line)] bg-[var(--color-line)] sm:grid-cols-3 md:grid-cols-5">
@@ -180,18 +181,52 @@ export function Entrepreneurial() {
                 <div className="mt-0.5 text-[12.5px] text-[var(--color-muted)]">
                   {b.note}
                 </div>
+                {b.press && b.press.length > 0 && (
+                  <div className="mt-3 border-t border-[var(--color-line)] pt-2.5">
+                    <div className="mono mb-1.5 text-[9.5px] uppercase tracking-[0.14em] text-[var(--color-subtle)]">
+                      Featured
+                    </div>
+                    <ul className="space-y-1">
+                      {b.press.map((p) => (
+                        <li key={p.url} className="flex items-baseline gap-2">
+                          <span
+                            aria-hidden
+                            className="mono text-[8.5px] text-[var(--color-subtle)]"
+                          >
+                            ↗
+                          </span>
+                          <a
+                            href={p.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="text-[11px] leading-tight text-[var(--color-muted)] underline decoration-[var(--color-line-strong)] underline-offset-[3px] transition-colors hover:text-[var(--color-accent)] hover:decoration-[var(--color-accent)]"
+                          >
+                            {p.label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </>
             );
             return b.href ? (
-              <a
+              <div
                 key={b.name}
-                href={b.href}
-                target="_blank"
-                rel="noreferrer"
-                className={cardClass}
+                role="button"
+                tabIndex={0}
+                onClick={() => window.open(b.href, "_blank", "noopener,noreferrer")}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    window.open(b.href, "_blank", "noopener,noreferrer");
+                  }
+                }}
+                className={cardClass + " cursor-pointer"}
               >
                 {inner}
-              </a>
+              </div>
             ) : (
               <div key={b.name} className={cardClass}>
                 {inner}
@@ -203,8 +238,11 @@ export function Entrepreneurial() {
         {/* Skills carried over */}
         <div className="mt-8">
           <div className="mono mb-4 flex items-center gap-3 text-[10.5px] uppercase tracking-[0.2em] text-[var(--color-subtle)]">
-            <span>Skills carried over from Tech/Startup Career</span>
+            <span>Skills carried over from tech</span>
             <span className="h-px flex-1 bg-[var(--color-line)]" />
+            <span className="text-[var(--color-accent)]">
+              The edge most F&amp;B operators don&rsquo;t bring
+            </span>
           </div>
           <ul className="grid grid-cols-2 gap-px overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-line)] bg-[var(--color-line)] sm:grid-cols-3 md:grid-cols-4">
             {skills.map((s) => (

@@ -38,7 +38,7 @@ export const projects: Project[] = [
       {
         layer: "Reconciliation",
         detail:
-          "We compare POS, accounting, and bank deposits in the same units so the numbers actually line up. When they don&rsquo;t, the system flags the gap instead of quietly averaging it away.",
+          "We compare POS, accounting, and bank deposits in the same units so the numbers actually line up. When they don't, the system flags the gap instead of quietly averaging it away.",
       },
       {
         layer: "Executive layer",
@@ -51,7 +51,7 @@ export const projects: Project[] = [
           "Claude on top, scoped to an explicit memory of business structure, vendors, and known anomalies — used for explanation, summarization, and drafting weekly operating notes that are reviewed before they leave the system.",
       },
     ],
-    ai: "Used. Claude handles the unstructured inputs that feed the warehouse &mdash; receipts and statements &mdash; extracting structured fields so the deterministic side can reconcile against them. Every output is validated before it lands.",
+    ai: "Used. Claude handles the unstructured inputs that feed the database &mdash; receipts and statements &mdash; extracting structured fields so the deterministic side can reconcile against them. Every output is validated before it lands.",
     stack: [
       "Next.js · TypeScript",
       "Postgres / warehouse",

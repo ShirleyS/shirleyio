@@ -47,7 +47,7 @@ export function Hero() {
               className="serif text-[clamp(1.75rem,2.6vw,2.1rem)] font-normal leading-[1.18] tracking-[-0.015em] text-[var(--color-ink)]"
             >
               <span className="block">
-                Solutions Architect for growth-stage startups.
+                Solutions Architect for growth-stage and enterprise tech.
               </span>
               <span className="block italic text-[var(--color-ink-2)]">
                 Now shipping three production AI systems with Claude.
@@ -61,12 +61,12 @@ export function Hero() {
               className="mt-5 max-w-[68ch] text-[15.5px] leading-[1.65] text-[var(--color-muted)] md:text-[16.5px]"
             >
               I&rsquo;m Shirley. Pre-sales SA and CSE leadership at{" "}
-              <span className="text-[var(--color-ink)]">Demandbase</span>{" "}
-              and{" "}
               <span className="text-[var(--color-ink)]">Clearbit</span>{" "}
-              <span className="text-[var(--color-subtle)]">(acq. HubSpot)</span>
-              &mdash; tier-one customers Stripe, Slack, Meta, Intercom, Segment.
-              Today, in CDMX: five live businesses and AI-native systems I
+              <span className="text-[var(--color-subtle)]">(acq. HubSpot)</span>{" "}
+              and{" "}
+              <span className="text-[var(--color-ink)]">Demandbase</span>
+              &mdash; serving tier-one customers like Stripe, Slack, Meta, Intercom, and Segment.
+              Today, in Mexico City: five live businesses and AI-native systems I
               ship with{" "}
               <span className="text-[var(--color-ink)]">Claude</span> daily.
             </motion.p>
@@ -108,7 +108,7 @@ export function Hero() {
         >
           <div>
             <div className="mono mb-3.5 text-[10.5px] uppercase tracking-[0.2em] text-[var(--color-subtle)]">
-              Growth-stage tech companies shipped to / supported
+              Customers and Partners shipped to / supported
             </div>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[var(--color-muted)] md:gap-x-6 md:gap-y-2.5">
               {[
@@ -275,7 +275,7 @@ function Portrait() {
             aria-hidden
             className="h-1 w-1 rounded-full bg-[var(--color-accent)]"
           />
-          CDMX
+          Mexico City
         </span>
       </figcaption>
     </figure>

@@ -13,7 +13,7 @@ export type TimelineEntry = {
 export const timeline: TimelineEntry[] = [
   {
     company: "Clearbit",
-    role: "Head of Customer Success Engineering · Solutions Architecture / Sales Engineering",
+    role: "Head of Solutions Architecture & Customer Success Engineering",
     range: "2018 — 2023 · acq. HubSpot 2023",
     location: "San Francisco / Mexico City",
     positioning:
@@ -30,7 +30,7 @@ export const timeline: TimelineEntry[] = [
       "Stood up Customer Success Engineering and Support Engineering as net-new functions covering four product surfaces — Salesforce package, APIs, native integrations, platform — and the internal/external success metrics, customer development, and escalation pathways that feed each of them into product strategy. Across five years, our teams supported <strong>over a thousand SMB, mid-market, and enterprise customers</strong> — plus the prospects in active sales cycles who needed engineering depth before they&rsquo;d sign.",
     customers: ["Intercom", "Meta", "Slack", "Stripe", "Twilio", "Unity"],
     detail:
-      "The interesting part was the operating layer underneath the org chart: how a CSE escalation became a product signal, how a partner integration became a renewal lever, how a quiet metric in the platform exposed a coverage gap nobody had named yet. Five years of running that layer is what taught me what TPM work actually feels like.",
+      "The interesting part was the operating layer underneath the org chart: how a customer&rsquo;s technical evaluation in pre-sales shaped what got built post-sale, how an escalation became a product signal, how owning both sides forced honest scoping &mdash; every commitment I made in the sales cycle had to be one my own delivery team could ship. Five years of running that layer is the closest analog to trusted technical advisory across the full customer journey, from evaluation through production deployment.",
   },
   {
     company: "Demandbase",
@@ -53,7 +53,7 @@ export const timeline: TimelineEntry[] = [
       "Built and shipped internal tooling I&rsquo;m still proud of &mdash; including an <strong>industry-first real-time sales alerting system that surfaced previously anonymous B2B web visitors to reps the moment they landed</strong> (JS + Slack), a Python/Rails research tool, a Ruby/Rails sales scoping tool, and Rails/JS event tracking into GA. Same pattern every time: find a manual loop sales or marketing was running by hand, make the work visible, then automate the part that was safe to automate.",
     customers: ["Accenture", "Adobe", "AWS", "Databricks", "Deloitte", "McKinsey", "Visa"],
     detail:
-      "This is where I learned that &ldquo;solutions engineering&rdquo; in enterprise martech is, functionally, applied program management — you&rsquo;re sequencing technical change across three or four teams that don&rsquo;t share a roadmap, and the reporting layer is what holds the whole thing together.",
+      "This is where I learned what winning a competitive technical evaluation actually requires &mdash; the customer&rsquo;s own data, their use cases, their pass criteria, and the discipline to instrument the proof and deliver against it. The technical case has to hold up to a sophisticated buyer in evidence, not in slides. That muscle is the closest analog to what an Applied AI Architect does in a Claude evaluation today.",
   },
   {
     company: "Vero",
