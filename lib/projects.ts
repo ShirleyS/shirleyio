@@ -38,7 +38,7 @@ export const projects: Project[] = [
       {
         layer: "Reconciliation",
         detail:
-          "We compare POS, accounting, and bank deposits in the same units so the numbers actually line up. When they don't, the system flags the gap instead of quietly averaging it away.",
+          "Compares POS, accounting, and bank deposits in the same units so the numbers actually line up. When they don't, the system flags the gap instead of quietly averaging it away.",
       },
       {
         layer: "Executive layer",

@@ -27,7 +27,7 @@ export const timeline: TimelineEntry[] = [
       "CRM + MAP architecture",
     ],
     surface:
-      "Stood up Customer Success Engineering and Support Engineering as net-new functions covering four product surfaces — Salesforce package, APIs, native integrations, platform — and the internal/external success metrics, customer development, and escalation pathways that feed each of them into product strategy. Across five years, our teams supported <strong>over a thousand SMB, mid-market, and enterprise customers</strong> — plus the prospects in active sales cycles who needed engineering depth before they&rsquo;d sign.",
+      "Stood up Solutions Architecture, Customer Success Engineering and Support Engineering as net-new functions covering four product surfaces — Salesforce package, APIs, native integrations, platform — and the internal/external success metrics, customer development, and escalation pathways that feed each of them into product strategy. Across five years, our teams supported <strong>over a thousand SMB, mid-market, and enterprise customers</strong> — plus the prospects in active sales cycles who needed engineering depth before they&rsquo;d sign.",
     customers: ["Intercom", "Meta", "Slack", "Stripe", "Twilio", "Unity"],
     detail:
       "For years, I ran both the pre-sales and post-sales customer engineering teams at Clearbit &mdash; through implementation, ongoing customer success, and the cross-sell, upsell, and renewal cycles that came after. That structure forces a discipline pure pre-sales teams don&rsquo;t carry: every architecture and scoping commitment made early has to be one the team can honor years into the account. It&rsquo;s the operating model behind real technical advisory: what we sold, my teams had to deliver across the full account lifecycle and beyond.",
@@ -50,7 +50,7 @@ export const timeline: TimelineEntry[] = [
       "Tag Management",
     ],
     surface:
-      "Built and shipped internal tooling I&rsquo;m still proud of &mdash; including an <strong>industry-first real-time sales alerting system that surfaced previously anonymous B2B web visitors to reps the moment they landed</strong> (JS + Slack), a Python/Rails research tool, a Ruby/Rails sales scoping tool, and Rails/JS event tracking into GA. Same pattern every time: find a manual loop sales or marketing was running by hand, make the work visible, then automate the part that was safe to automate.",
+      "Built and shipped internal tooling that automated work the sales, marketing, integrations, and support teams were doing by hand &mdash; including an <strong>industry-first real-time sales alerting system that surfaced previously anonymous B2B web visitors to reps the moment they landed</strong> (JS + Slack), a Python/Rails research tool, a Ruby/Rails sales scoping tool, and Rails/JS event tracking into GA. Same instinct each time: spot the manual loop, make it measurable, automate where safe.",
     customers: ["Accenture", "Adobe", "AWS", "Databricks", "Deloitte", "McKinsey", "Visa"],
     detail:
       "Demandbase is where I learned what winning a competitive technical evaluation actually requires &mdash; the customer&rsquo;s own data, their use cases, their pass criteria, and the discipline to instrument the proof and deliver against it. The technical case has to hold up to a sophisticated buyer in evidence, not in slides.",

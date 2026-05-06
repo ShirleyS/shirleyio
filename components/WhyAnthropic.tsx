@@ -29,8 +29,8 @@ export function WhyAnthropic() {
             myself out of the day-to-day &mdash; building the org, the
             processes, and the platform (RIOS) so the businesses run
             without me as a single point of failure.
-            My partner co-runs them with a fully capable team behind her;
-            the day-to-day continues whether I'm involved or not.
+            My partner now leads the full operation and the day-to-day, with a fully capable team behind her;
+            the businesses continue whether I'm involved or not.
             Stepping back from operations was the goal. Anthropic was
             attractive to me a year ago too &mdash; the timing just
             wasn't right then. <em>It's starting to feel right now.</em>
@@ -48,7 +48,7 @@ export function WhyAnthropic() {
             I've been using Claude as a daily operator across my
             businesses, and the rate of capability gains release-over-release
             has been hard to miss &mdash; it's rare to watch a
-            product redefine what's possible this quickly. The honest pull is the learning curve. Being inside the work at Anthropic &mdash; instead of watching it from the outside &mdash; is the kind of opportunity I haven't had access to in years. I want to be at Anthropic. This role is the
+            product redefine what's possible this quickly. The honest pull is the learning curve. Being inside the work at Anthropic &mdash; instead of watching it from the outside &mdash; is the better seat. I want to be at Anthropic. This role is the
             cleanest fit; if the team thinks I'd land harder somewhere
             adjacent, I'd hear that conversation too.
           </p>

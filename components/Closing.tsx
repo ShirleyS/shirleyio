@@ -5,15 +5,15 @@ const overlap: Array<{ jd: string; me: string }> = [
   },
   {
     jd: "Act as a technical sponsor for high-value strategic customers and advise them on their overall AI adoption strategies or use case scoping and POC execution.",
-    me: "Technical sponsorship for tier-one strategic customers has been the work &mdash; Stripe, Slack, Meta, Intercom, Segment, Twilio, Adobe, Accenture, AWS, Deloitte, Visa. At Clearbit and Demandbase I owned the architecture conversations from initial scoping through POC through deployment, and the credibility that earned renewal and expansion. Recently I&rsquo;ve shipped three production AI systems with Claude (RIOS, CasaRuta, CapitalRuta), giving me hands-on credibility for what Claude can and can&rsquo;t do &mdash; the depth needed to advise a Fortune 500 customer on their AI adoption strategy.",
+    me: "Technical sponsorship for strategic customers has been the work &mdash; owning architecture conversations from initial scoping through POC through deployment, and earning the credibility that drove renewal and expansion at Clearbit and Demandbase. The recent Claude work adds practitioner grounding to those conversations: I&rsquo;ve shipped enough to speak from experience, not theory.",
   },
   {
     jd: "Partner closely with Industries sales leadership to identify new strategies to drive adoption of Anthropic products within specific verticals or horizontal use cases.",
-    me: "Partnership with sales leadership has been daily work for a decade. At Demandbase I led pre-sales for ABM solutions across financial services, technology, healthcare, and retail customers &mdash; the same vertical mix Anthropic Industries serves. At Clearbit, owning both pre-sales and post-sales technical work meant operating in step with sales leadership on every strategic deal: sourcing patterns, prioritizing target accounts, building the technical case that moved deals from evaluation to close. The reps trusted me in the room because what I committed to in pre-sales shipped without surprises post-close.",
+    me: "Partnership with sales leadership has been daily work for a decade. At Demandbase I led pre-sales for ABM solutions across financial services, technology, healthcare, and retail customers &mdash; the same vertical mix Anthropic Industries serves. At Clearbit, owning both pre-sales and post-sales technical work meant operating in step with sales leadership on every strategic deal: sourcing patterns, prioritizing target accounts, building the technical case that moved deals from evaluation to close. The reps trusted me in the room because what my teams and I committed to in pre-sales shipped without surprises post-close.",
   },
   {
     jd: "Work with cross-functional teams like product and engineering to ensure Anthropic prioritizes customer feedback or resolves blockers to adoption.",
-    me: "Closing the customer-to-product feedback loop has been the core of every customer engineering function I&rsquo;ve built. At Clearbit I stood up CSE with explicit feedback pathways &mdash; success metrics, customer development, and escalation patterns all feeding product strategy across four product surfaces. Across years of running that function, the loop ran continuously: the patterns we surfaced from 1,000+ customer engagements drove what shipped next. That&rsquo;s the loop I&rsquo;d close back to your Product and Engineering teams.",
+    me: "Closing the customer-to-product feedback loop has been the core of every customer engineering function I&rsquo;ve built. At Clearbit I stood up CSE with explicit feedback pathways &mdash; success metrics, customer development, and escalation patterns all feeding product strategy. Across years of running that function, the patterns we surfaced from 1,000+ customer engagements drove what shipped next.",
   },
 ];
 
@@ -39,12 +39,7 @@ export function Closing() {
             <span>On the fit</span>
           </div>
           <p className="serif text-[16px] leading-[1.65] text-[var(--color-ink-2)] md:text-[17px]">
-            At Clearbit (Series A through HubSpot acquisition) I built and led Solutions Architecture, Customer Success Engineering, and Support Engineering &mdash; all three functions stood up from net-new across four product surfaces, supporting tier-one accounts including Stripe, Slack, Meta, Intercom, and Segment. Demandbase before that, leading Solutions Engineering for Fortune 500 customers across financial services, technology, healthcare, and retail &mdash; the same vertical mix Industries serves at Anthropic.
-            Recently I&rsquo;ve shipped three production AI systems with
-            Claude &mdash; RIOS, CasaRuta, and CapitalRuta &mdash;
-            giving me hands-on credibility for advising
-            customers on AI adoption and reviewing what my SAs build.
-            That&rsquo;s the combination I&rsquo;d bring to your team on day one: a decade of building and leading pre-sales customer engineering, plus hands-on Claude experience.
+            Joined Clearbit pre-Series A and built Solutions Architecture, Customer Success Engineering, and Support Engineering as net-new functions, leading them through the company&rsquo;s growth phase &mdash; supporting tier-one accounts including Stripe, Slack, Meta, Intercom, and Segment. (Acquired by HubSpot in 2023.) Demandbase before that, leading SE for Fortune 500 customers across the same vertical mix Industries serves. Recently shipped three production AI systems with Claude. The combination I&rsquo;d bring on day one: a decade building and leading pre-sales customer engineering, plus hands-on Claude experience.
           </p>
         </div>
 

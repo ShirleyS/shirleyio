@@ -20,7 +20,7 @@ export function Coda() {
 
         <div className="md:col-span-7">
           <p className="serif text-[16.5px] leading-[1.65] text-[var(--color-ink-2)] md:text-[17.5px]">
-            Ten years architecting and solutioning at growth-stage and enterprise tech. At Clearbit, built and ran Solutions Architecture, Customer Success Engineering, and Support Engineering across four product surfaces. Demandbase before that, leading Solutions Engineering for Fortune 500 customers across financial services, technology, healthcare, and retail &mdash; the vertical mix Industries serves. Two years out: five businesses operating in Mexico City and three production systems shipped on Claude. What this role does is what I&rsquo;ve spent a decade doing.
+            A decade architecting and solutioning across growth-stage and enterprise tech. Three years out, building businesses and shipping production AI on Claude. The role here matches what I know; Anthropic is the place I&rsquo;d come back for.
           </p>
           <p className="mt-4 text-[15.5px] leading-[1.65] text-[var(--color-muted)] md:text-[16.5px]">
             The resume&rsquo;s below. The cover letter is this page. The
