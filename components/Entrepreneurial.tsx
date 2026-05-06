@@ -94,7 +94,7 @@ export function Entrepreneurial() {
               <span aria-hidden className="mono pt-1 text-[11px] text-[var(--color-subtle)]">
                 04
               </span>
-              <span>Make sure it&rsquo;s not tech. Build the tech for it anyway.</span>
+              <span>Pick anything but the one thing you&rsquo;ve done for ten years. Do it again anyway.</span>
             </li>
           </ul>
         </div>
