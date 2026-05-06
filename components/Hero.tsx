@@ -47,7 +47,7 @@ export function Hero() {
               className="serif text-[clamp(1.75rem,2.6vw,2.1rem)] font-normal leading-[1.18] tracking-[-0.015em] text-[var(--color-ink)]"
             >
               <span className="block">
-                Solutions Architect for growth-stage and enterprise tech.
+                Solutions Architect for growth-stage and enterprise orgs.
               </span>
               <span className="block italic text-[var(--color-ink-2)]">
                 Now shipping three production AI systems with Claude.
