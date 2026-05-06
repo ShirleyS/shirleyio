@@ -52,7 +52,7 @@ const skills = [
   "Analytics and Attribution",
   "ICP and Targeting",
   "Forecasting and Modeling",
-  "Sales and Negotiations"
+  "Modern Martech familiarity"
 ];
 
 export function Entrepreneurial() {

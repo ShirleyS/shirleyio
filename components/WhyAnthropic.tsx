@@ -14,7 +14,7 @@ export function WhyAnthropic() {
       <div className="mt-7 grid gap-8 md:mt-10 md:grid-cols-12 md:gap-10">
         <div className="md:col-span-4">
           <h2 className="serif text-[clamp(1.9rem,3.4vw,2.6rem)] font-normal leading-[1.06] tracking-[-0.018em] text-[var(--color-ink)]">
-            I'm not actively searching.
+            After two years out, this is the role.
           </h2>
           <p className="mono mt-5 text-[11px] uppercase tracking-[0.18em] text-[var(--color-subtle)]">
             The honest version

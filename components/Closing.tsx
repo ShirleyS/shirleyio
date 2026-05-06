@@ -70,7 +70,7 @@ export function Closing() {
             </h2>
 
             <p className="mt-7 max-w-[44ch] text-[15.5px] leading-[1.65] text-[var(--color-muted)]">
-              The four responsibility lines from the JD, mapped to the closest
+              The five responsibility lines from the JD, mapped to the closest
               evidence in my actual experience.
             </p>
           </div>

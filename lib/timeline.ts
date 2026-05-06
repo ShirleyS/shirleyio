@@ -53,7 +53,7 @@ export const timeline: TimelineEntry[] = [
       "Built and shipped internal tooling I&rsquo;m still proud of &mdash; including an <strong>industry-first real-time sales alerting system that surfaced previously anonymous B2B web visitors to reps the moment they landed</strong> (JS + Slack), a Python/Rails research tool, a Ruby/Rails sales scoping tool, and Rails/JS event tracking into GA. Same pattern every time: find a manual loop sales or marketing was running by hand, make the work visible, then automate the part that was safe to automate.",
     customers: ["Accenture", "Adobe", "AWS", "Databricks", "Deloitte", "McKinsey", "Visa"],
     detail:
-      "This is where I learned what winning a competitive technical evaluation actually requires &mdash; the customer&rsquo;s own data, their use cases, their pass criteria, and the discipline to instrument the proof and deliver against it. The technical case has to hold up to a sophisticated buyer in evidence, not in slides. That muscle is the closest analog to what an Applied AI Architect does in a Claude evaluation today.",
+      "Demandbase is where I learned what winning a competitive technical evaluation actually requires &mdash; the customer&rsquo;s own data, their use cases, their pass criteria, and the discipline to instrument the proof and deliver against it. The technical case has to hold up to a sophisticated buyer in evidence, not in slides.",
   },
   {
     company: "Vero",
