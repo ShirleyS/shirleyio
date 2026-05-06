@@ -57,7 +57,7 @@ export const projects: Project[] = [
       "Postgres / warehouse",
       "POS API",
       "Claude (Anthropic)",
-      "Vercel",
+      "Netlify",
     ],
     impact: [
       "Month-end close happens in real time instead of after a three-week wait — books are continuous, not retrospective.",
