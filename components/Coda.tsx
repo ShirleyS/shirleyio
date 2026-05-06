@@ -8,9 +8,9 @@ export function Coda() {
       <div className="mt-7 grid gap-8 md:mt-10 md:grid-cols-12 md:gap-10">
         <div className="md:col-span-5">
           <h2 className="serif text-[clamp(1.9rem,3.4vw,2.6rem)] font-normal leading-[1.06] tracking-[-0.018em] text-[var(--color-ink)]">
-            Now: Applied AI Architect,
+            Now: Manager of Solutions
             <span className="block text-[var(--color-muted)]">
-              Anthropic.
+              Architecture, Anthropic.
             </span>
           </h2>
           <p className="mono mt-5 text-[11px] uppercase tracking-[0.18em] text-[var(--color-subtle)]">
@@ -20,12 +20,7 @@ export function Coda() {
 
         <div className="md:col-span-7">
           <p className="serif text-[16.5px] leading-[1.65] text-[var(--color-ink-2)] md:text-[17.5px]">
-            Ten plusyears architecting and solutioning for growth-stage tech.
-            Operator-founder &mdash; jumped into a foreign country I barely spoke the language of, and built five working businesses out of it.
-            Recent work shipping production AI systems with Claude. This
-            is the role that brings the three together &mdash; helping
-            the next wave of Claude-native startups go from evaluation to
-            scale.
+            Ten plus years architecting and solutioning for growth-stage tech &mdash; including building and leading Solutions Architecture, Customer Success Engineering, and Support Engineering at Clearbit. Operator-founder &mdash; jumped into a foreign country I barely spoke the language of, and built five working businesses out of it. Recent work shipping production AI systems with Claude. This is the role that brings the three together &mdash; leading the Industries SA team that helps Anthropic&rsquo;s Fortune 500 customers go from evaluation to deployment.
           </p>
           <p className="mt-4 text-[15.5px] leading-[1.65] text-[var(--color-muted)] md:text-[16.5px]">
             The resume&rsquo;s below. The cover letter is this page. The
@@ -43,7 +38,7 @@ export function Coda() {
               Email
             </CTA>
             <CTA
-              href="https://job-boards.greenhouse.io/anthropic/jobs/5057258008"
+              href="https://job-boards.greenhouse.io/anthropic/jobs/4964610008"
               external
             >
               The JD

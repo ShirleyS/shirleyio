@@ -13,7 +13,7 @@ export type TimelineEntry = {
 export const timeline: TimelineEntry[] = [
   {
     company: "Clearbit",
-    role: "Head of Solutions Architecture & Customer Success Engineering",
+    role: "Head of Solutions Architecture, Customer Success Engineering & Support Engineering",
     range: "2018 — 2023 · acq. HubSpot 2023",
     location: "San Francisco / Mexico City",
     positioning:

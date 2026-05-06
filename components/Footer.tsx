@@ -8,7 +8,7 @@ export function Footer() {
               Email is the fastest path.
             </h2>
             <a
-              href="mailto:ShirleyShaw.is@gmail.com?subject=Applied%20AI%20Architect%2C%20Startups%20%E2%80%94%20Anthropic"
+              href="mailto:ShirleyShaw.is@gmail.com?subject=Manager%20of%20Solutions%20Architecture%2C%20Industries%20%E2%80%94%20Anthropic"
               className="serif group mt-5 inline-flex items-baseline gap-3 text-[clamp(1.3rem,2.2vw,1.8rem)] tracking-tight text-[var(--color-ink)] transition-colors hover:text-[var(--color-accent)]"
             >
               <span className="link">ShirleyShaw.is@gmail.com</span>

@@ -39,7 +39,7 @@ export function Targeted({ role, company, href }: TargetedProps) {
 }
 
 export const ROLE = {
-  role: "Applied AI Architect, Startups",
+  role: "Manager of Solutions Architecture, Industries",
   company: "Anthropic",
-  href: "https://job-boards.greenhouse.io/anthropic/jobs/5057258008",
+  href: "https://job-boards.greenhouse.io/anthropic/jobs/4964610008",
 };

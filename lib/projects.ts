@@ -143,7 +143,7 @@ export const projects: Project[] = [
       {
         layer: "Hybrid data model",
         detail:
-          "A static seed catalog as the source of truth, with a Supabase layer on top that captures approved provider edits — so providers can keep their listings current without us having to fork or rebuild the catalog underneath.",
+          "The catalog Claude built is the foundation — stable and versioned. On top of it, a writable layer captures provider-submitted edits. Approved edits go live so providers can keep their listings current, without touching the underlying catalog.",
       },
       {
         layer: "Monthly refresh",
@@ -161,7 +161,7 @@ export const projects: Project[] = [
           "Buyer, provider, and admin dashboards — applications, lead routing, claims, reviews, analytics. Multi-tenant from day one because the operating model required it.",
       },
     ],
-    ai: "Used upstream, not in the user-facing decision. Agents crawled the public web — bank, fintech, government program, factoring, and equity provider sources — to assemble the multi-category catalog across 10+ institution types. The eligibility answer shown to a small-business owner stays deterministic. The probabilistic AI layer (approval likelihood, signal scoring) is sequenced for later, where the underlying problem is genuinely probabilistic — never as a shortcut around the rule-based work.",
+    ai: "Used upstream, not in the user-facing decision. Claude crawled bank, fintech, government, factoring, and equity provider sources to build the catalog across 10+ institution types. When a business owner gets an eligibility answer, it stays deterministic &mdash; same inputs, same answer, every time, fully explainable.",
     stack: [
       "React · TypeScript",
       "Tailwind",
