@@ -13,7 +13,7 @@ const overlap: Array<{ jd: string; me: string }> = [
   },
   {
     jd: "Work with cross-functional teams like product and engineering to ensure Anthropic prioritizes customer feedback or resolves blockers to adoption.",
-    me: "Closing the customer-to-product feedback loop has been the core of every customer engineering function I&rsquo;ve built. At Clearbit I stood up CSE with explicit feedback pathways &mdash; success metrics, customer development, and escalation patterns all feeding product strategy. Across years of running that function, the patterns we surfaced from 1,000+ customer engagements drove what shipped next.",
+    me: "Closing the customer-to-product feedback loop has been the core of every customer engineering function I&rsquo;ve built. At Clearbit I stood up Solutions Architecture, Customer Success Engineering, and Support with explicit feedback pathways &mdash; success metrics, customer development, and escalation patterns all feeding product strategy. Across years of running that function, the patterns we surfaced from 1,000+ customer engagements drove what shipped next.",
   },
 ];
 
