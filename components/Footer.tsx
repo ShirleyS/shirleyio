@@ -5,7 +5,7 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-12 md:gap-10">
           <div className="md:col-span-6">
             <h2 className="serif text-[clamp(1.4rem,2.2vw,1.9rem)] font-normal leading-[1.2] tracking-[-0.012em] text-[var(--color-ink)]">
-              Email is the fastest path.
+              Email is the best path.
             </h2>
             <a
               href="mailto:ShirleyShaw.is@gmail.com?subject=Manager%20of%20Solutions%20Architecture%2C%20Industries%20%E2%80%94%20Anthropic"

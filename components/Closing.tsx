@@ -1,7 +1,7 @@
 const overlap: Array<{ jd: string; me: string }> = [
   {
     jd: "Hire, manage, and guide a team of pre-sales Solutions Architects by providing both technical guidance and career development.",
-    me: "Building and leading customer engineering teams from scratch has been the best part of my career. At Clearbit I stood up Solutions Architecture, Customer Success Engineering, and Support Engineering as net-new functions across four product surfaces (Salesforce package, APIs, native integrations, platform) &mdash; hired and developed engineers and architects, set the technical guidance bar, and built career paths from individual contributor through senior leadership. Years of running that, through Series A growth and a HubSpot acquisition, is the closest analog to building this team at Anthropic.",
+    me: "Building and leading customer engineering teams from the ground up has been the most rewarding part of my career. At Clearbit, I established Solutions Architecture, Customer Success Engineering, and Support Engineering as net-new functions spanning four product surfaces: Salesforce package, APIs, native integrations, and the platform itself. I hired and developed engineers and architects, raised the bar for technical guidance, and created career paths that supported growth from junior support roles through engineering project leaders. Years of running that, through Series A growth and a HubSpot acquisition, is the closest analog to building this team at Anthropic.",
   },
   {
     jd: "Act as a technical sponsor for high-value strategic customers and advise them on their overall AI adoption strategies or use case scoping and POC execution.",
