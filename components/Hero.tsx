@@ -60,7 +60,7 @@ export function Hero() {
               transition={{ duration: 0.9, delay: 0.18, ease }}
               className="mt-5 max-w-[68ch] text-[15.5px] leading-[1.65] text-[var(--color-muted)] md:text-[16.5px]"
             >
-              I&rsquo;m Shirley. Pre-sales SA and CSE leadership at{" "}
+              I&rsquo;m Shirley. Pre-sales Solutions Architecture, and post-sales Customer Success Engineering and Support leadership at{" "}
               <span className="text-[var(--color-ink)]">Clearbit</span>{" "}
               <span className="text-[var(--color-subtle)]">(acq. HubSpot)</span>{" "}
               and{" "}
