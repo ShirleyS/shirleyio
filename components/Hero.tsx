@@ -50,7 +50,7 @@ export function Hero() {
                 Solutions Architect for growth-stage and enterprise orgs.
               </span>
               <span className="block italic text-[var(--color-ink-2)]">
-                Now shipping three production AI systems with Claude.
+                Now shipping production AI systems with Claude.
               </span>
             </motion.h1>
 
