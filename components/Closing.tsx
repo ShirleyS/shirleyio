@@ -1,7 +1,7 @@
 const overlap: Array<{ jd: string; me: string }> = [
   {
     jd: "Hire, manage, and guide a team of pre-sales Solutions Architects by providing both technical guidance and career development.",
-    me: "Building and leading customer engineering teams from the ground up has been the most rewarding part of my career. At Clearbit, I established Solutions Architecture, Customer Success Engineering, and Support Engineering as net-new functions spanning four product surfaces: Salesforce package, APIs, native integrations, and the platform itself. I hired and developed engineers and architects, raised the bar for technical guidance, and created career paths that supported growth from junior support roles through engineering project leaders. Years of running that, through Series A growth and a HubSpot acquisition, is the closest analog to building this team at Anthropic.",
+    me: "Building and leading customer engineering teams from the ground up has been the most rewarding part of my career. At Clearbit, I established Solutions Architecture, Customer Success Engineering, and Support Engineering as net-new functions spanning four product surfaces: Salesforce package, APIs, native integrations, and the platform itself. I hired and developed engineers and architects, raised the bar for technical guidance, and created career paths that supported growth from Support roles through Customer Success Engineering and Engineering project leaders. Years of running that, through Series A growth and a HubSpot acquisition, is the closest analog to building this team at Anthropic.",
   },
   {
     jd: "Act as a technical sponsor for high-value strategic customers and advise them on their overall AI adoption strategies or use case scoping and POC execution.",
@@ -46,7 +46,7 @@ export function Closing() {
         <div className="grid gap-10 md:grid-cols-12 md:gap-10">
           <div className="md:col-span-5">
             <h2 className="serif text-[clamp(2rem,3.8vw,3rem)] font-normal leading-[1.04] tracking-[-0.018em] text-[var(--color-ink)]">
-              I&rsquo;m applying to lead Industries Solutions Architecture at Anthropic
+              I&rsquo;m applying to lead Solutions Architecture, Applied AI (Industries) at Anthropic.
               <span className="block text-[var(--color-muted)]">
                 — here&rsquo;s how my experience maps to it.
               </span>
