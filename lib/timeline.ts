@@ -1,5 +1,8 @@
 export type TimelineEntry = {
   company: string;
+  logo: string;
+  /** Rendered logo height in px, tuned so the marks look the same size. */
+  logoHeight: number;
   role: string;
   range: string;
   location: string;
@@ -13,6 +16,8 @@ export type TimelineEntry = {
 export const timeline: TimelineEntry[] = [
   {
     company: "Clearbit",
+    logo: "/experience/clearbit.png",
+    logoHeight: 30,
     role: "Head of Solutions Architecture, Customer Success Engineering & Support Engineering",
     range: "2018–2023 · acq. HubSpot 2023",
     location: "San Francisco / Mexico City",
@@ -34,6 +39,8 @@ export const timeline: TimelineEntry[] = [
   },
   {
     company: "Demandbase",
+    logo: "/experience/demandbase.svg",
+    logoHeight: 20,
     role: "Solutions Engineering Lead",
     range: "2016–2018",
     location: "San Francisco",
@@ -57,6 +64,8 @@ export const timeline: TimelineEntry[] = [
   },
   {
     company: "Vero",
+    logo: "/experience/vero.svg",
+    logoHeight: 19,
     role: "Customer Success Engineer",
     range: "2015–2016",
     location: "San Francisco",
@@ -75,6 +84,8 @@ export const timeline: TimelineEntry[] = [
   },
   {
     company: "Oracle Marketing Cloud",
+    logo: "/experience/oracle.svg",
+    logoHeight: 15,
     role: "Senior Expert Services Specialist",
     range: "2013–2014",
     location: "San Francisco",

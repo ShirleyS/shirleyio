@@ -73,6 +73,17 @@ export function Timeline() {
                     )}
                     aria-expanded={isOpen}
                   >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={entry.logo}
+                      alt=""
+                      aria-hidden
+                      style={{ height: entry.logoHeight }}
+                      className={cn(
+                        "mb-3 w-auto max-w-[150px] object-contain object-left transition-opacity duration-300",
+                        isOpen ? "opacity-100" : "opacity-80 group-hover:opacity-100",
+                      )}
+                    />
                     <div className="flex flex-wrap items-baseline justify-between gap-3">
                       <div className="flex items-baseline gap-3">
                         <h3 className="serif text-[20px] font-normal tracking-tight text-[var(--color-ink)]">

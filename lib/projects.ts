@@ -146,7 +146,7 @@ export const projects: Project[] = [
       {
         src: "/builds/algoquehacer-home.webp",
         label: "For organizers",
-        alt: "AlgoQueHacer organizer landing page: selling tickets for your event, one link",
+        alt: "AlgoQueHacer organizer landing page: selling tickets to your event is a piece of cake",
       },
       {
         src: "/builds/algoquehacer-event.webp",
@@ -159,12 +159,6 @@ export const projects: Project[] = [
         label: "Everything handled",
         alt: "AlgoQueHacer feature overview: event page, bookings and capacity, changes, automatic emails, control center, alerts",
         note: "Host one-pager",
-      },
-      {
-        src: "/builds/algoquehacer-solicitud.webp",
-        label: "Event builder",
-        alt: "AlgoQueHacer event application with a live preview of the ticket buyers will receive",
-        path: "/solicitud",
       },
       {
         src: "/builds/algoquehacer-pro.webp",

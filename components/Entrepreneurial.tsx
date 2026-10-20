@@ -4,6 +4,7 @@ import { Section, Eyebrow } from "@/components/ui/Section";
 
 const businesses: Array<{
   name: string;
+  logo: string;
   role: string;
   note: string;
   href?: string;
@@ -11,6 +12,7 @@ const businesses: Array<{
 }> = [
   {
     name: "Nice Day Coffee",
+    logo: "/portfolio/nice-day-cat.png",
     role: "Specialty coffee",
     note: "Cuauhtémoc, CDMX",
     href: "https://www.instagram.com/nicedaymx/",
@@ -21,6 +23,7 @@ const businesses: Array<{
   },
   {
     name: "Nice Day Panadería",
+    logo: "/portfolio/nice-day-cat.png",
     role: "Bakery",
     note: "Roma Norte, CDMX",
     href: "https://www.instagram.com/nicedaymx/",
@@ -31,18 +34,21 @@ const businesses: Array<{
   },
   {
     name: "Bocaza",
+    logo: "/portfolio/bocaza-croc.png",
     role: "Restaurant",
     note: "Cuauhtémoc, CDMX",
     href: "https://www.instagram.com/bocazamx/",
   },
   {
     name: "Abasto Café",
+    logo: "/portfolio/abasto.svg",
     role: "Café",
     note: "Miguel Hidalgo, CDMX",
     href: "https://www.instagram.com/abastocafe/",
   },
   {
     name: "Tripulante Roastery",
+    logo: "/portfolio/tripulante.png",
     role: "Roastery + wholesale",
     note: "Miguel Hidalgo, CDMX",
   },
@@ -166,6 +172,14 @@ export function Entrepreneurial() {
               "group block border-t-2 border-[var(--color-accent)]/30 bg-[var(--color-bg-elevated)] p-5 transition-colors duration-300 hover:border-[var(--color-accent)] hover:bg-[var(--color-bg-deep)]";
             const inner = (
               <>
+                <div className="mb-4 flex h-14 items-center">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={b.logo}
+                    alt={`${b.name} logo`}
+                    className="max-h-full max-w-[85%] object-contain transition-transform duration-300 group-hover:scale-[1.04]"
+                  />
+                </div>
                 <div className="flex min-h-[2.6em] items-start justify-between gap-2">
                   <div className="serif text-[15.5px] leading-tight text-[var(--color-ink)] transition-colors group-hover:text-[var(--color-accent)]">
                     {b.name}

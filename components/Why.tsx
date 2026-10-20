@@ -6,6 +6,21 @@ const criteria = [
   { n: "03", k: "Cool products" },
 ];
 
+const story = [
+  {
+    label: "Since 2023",
+    text: "My partner and I built five businesses in Mexico City from zero, and I built RIOS, the platform that runs them. Then I engineered myself out of the day-to-day: hired and developed the team, wrote the processes, removed every single point of failure. My partner leads the operation now, and the businesses run whether I’m in the room or not.",
+  },
+  {
+    label: "Why the skills stayed sharp",
+    text: "Wiring POS, accounting, payroll, and banking together is the same integration and data work I did for customers like Stripe and Slack, with my own P&L on the line. I kept shipping the whole time: four production systems built with Claude. Being the customer taught me what breaks in production and what actually gets adopted.",
+  },
+  {
+    label: "What I’m looking for",
+    text: "Leading pre-sales Solutions Architecture and post-sales Customer Success Engineering for growth-stage and enterprise customers: the technical conversations, the advisory work, and the path from evaluation to production. Ideally close to AI, helping customers put it to work.",
+  },
+];
+
 export function Why() {
   return (
     <Section id="why" className="border-t border-[var(--color-line)]">
@@ -24,50 +39,28 @@ export function Why() {
           </p>
         </div>
 
-        <div className="prose-editorial md:col-span-8">
-          <p>
-            First, the obvious: in 2023 I stepped away from tech roles, not
-            from the work. Since then my partner and I have built five
-            businesses in Mexico City from zero, and I built the platform that
-            runs them. The last two years went into engineering myself out of
-            the day-to-day: hiring and developing the team, writing the
-            processes, and shipping RIOS so nothing depends on me. It worked.
-            My partner leads the full operation now with a capable team behind
-            her, and the businesses run whether I&rsquo;m in the room or not.
-            With the businesses running on their own, <em>the timing is right
-            to go back in.</em>
+        <div className="md:col-span-8">
+          <p className="serif text-[clamp(18px,1.6vw,21px)] leading-[1.5] tracking-[-0.008em] text-[var(--color-ink)]">
+            In 2023 I stepped away from tech roles, not from the work. With
+            the businesses I built now running on their own,{" "}
+            <em className="text-[var(--color-muted)]">the timing is right to go back in.</em>
           </p>
 
-          <p>
-            The skills never went stale. Running businesses on top of POS,
-            accounting, payroll, and banking systems is the same integration
-            and data work I did for customers like Stripe and Slack, with my
-            own P&amp;L on the line. And I&rsquo;ve been shipping the whole
-            time: four production systems built with Claude, used every day by
-            operators, homebuyers, founders, and event hosts. Being the
-            customer sharpened exactly what a Solutions Architect needs: what
-            breaks in production, what a buyer actually trusts, and what it
-            takes for a tool to get adopted instead of shelved.
-          </p>
-
-          <p>
-            What I&rsquo;m looking for: a role that builds on work I&rsquo;ve
-            led for a decade. Pre-sales Solutions Architecture and post-sales
-            Customer Success Engineering for growth-stage and enterprise
-            customers, founder-level technical conversations, and the advisory
-            work that lives between technical evaluation and production
-            deployment. Ideally close to AI: I use Claude daily as an operator
-            and a builder, the capability gains release over release are hard
-            to miss, and I&rsquo;d rather help customers put that into
-            production than watch it from the outside.
-          </p>
-
-          <p>
-            My criteria for any role haven&rsquo;t changed in ten years, in
-            this order: an overwhelming amount to keep learning, a smart team,
-            and cool products. That framework has never steered me wrong,
-            and it&rsquo;s the bar for whatever comes next.
-          </p>
+          <dl className="mt-7 border-t border-[var(--color-line)]">
+            {story.map((row) => (
+              <div
+                key={row.label}
+                className="grid gap-2 border-b border-[var(--color-line)] py-5 md:grid-cols-[11rem_1fr] md:gap-8"
+              >
+                <dt className="mono pt-1 text-[10.5px] uppercase leading-[1.5] tracking-[0.16em] text-[var(--color-subtle)]">
+                  {row.label}
+                </dt>
+                <dd className="text-[15px] leading-[1.65] text-[var(--color-ink-2)]">
+                  {row.text}
+                </dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </div>
 

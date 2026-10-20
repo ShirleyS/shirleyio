@@ -6,7 +6,7 @@ const overlap: Array<{ area: string; what: string; me: string }> = [
   },
   {
     area: "Sponsor strategic customers",
-    what: "Be the technical sponsor for high-value accounts and advise on AI adoption, use-case scoping, and POC execution through to production.",
+    what: "Be the technical sponsor for high-value accounts, from use-case scoping and POC execution through to production.",
     me: "Technical sponsorship for strategic customers has been the work: owning architecture conversations from initial scoping through POC through deployment, and earning the credibility that drove renewal and expansion at Clearbit and Demandbase. The recent Claude work adds practitioner grounding to those conversations: I&rsquo;ve shipped enough to speak from experience, not theory.",
   },
   {
