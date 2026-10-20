@@ -3,11 +3,10 @@
 import { useEffect, useState } from "react";
 
 const links = [
-  { href: "#why", label: "Why I'm here" },
   { href: "#fit", label: "What I bring" },
   { href: "#experience", label: "Experience" },
+  { href: "#why", label: "Why I'm here" },
   { href: "#systems", label: "Builds" },
-  { href: "#coda", label: "Coming back" },
 ];
 
 export function Nav() {
@@ -61,7 +60,7 @@ export function Nav() {
           ))}
         </nav>
         <a
-          href="mailto:ShirleyShaw.is@gmail.com"
+          href="#contact"
           className="mono hidden items-center gap-1.5 px-1 py-1.5 text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink)] transition-colors hover:text-[var(--color-accent)] sm:inline-flex"
         >
           Contact

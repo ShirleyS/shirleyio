@@ -16,22 +16,24 @@ const serif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "Shirley Shaw · Operational systems, martech, AI workflows",
+  title: "Shirley Shaw · Solutions Architecture leader",
   description:
-    "10+ years building martech, customer data, and analytics infrastructure. Currently building AI-native operational systems from Mexico City.",
+    "Solutions Architecture leader for growth-stage and enterprise teams. Built and led SA, Customer Success Engineering and Support at Clearbit (acq. HubSpot) and Demandbase. Now shipping production AI with Claude.",
   metadataBase: new URL("https://shirley.io"),
   openGraph: {
-    title: "Shirley Shaw",
+    title: "Shirley Shaw · Solutions Architecture leader",
     description:
-      "Operational systems, martech infrastructure, AI workflows.",
+      "Built and led SA, CSE and Support at Clearbit (acq. HubSpot) and Demandbase. Now shipping production AI with Claude.",
     type: "website",
     url: "https://shirley.io",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Shirley Shaw, Solutions Architecture leader" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shirley Shaw",
+    title: "Shirley Shaw · Solutions Architecture leader",
     description:
-      "Operational systems, martech infrastructure, AI workflows.",
+      "Built and led SA, CSE and Support at Clearbit (acq. HubSpot) and Demandbase. Now shipping production AI with Claude.",
+    images: ["/og.png"],
   },
   icons: {
     icon: [

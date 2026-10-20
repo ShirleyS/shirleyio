@@ -2,7 +2,7 @@ const overlap: Array<{ area: string; what: string; me: string }> = [
   {
     area: "Build and lead the team",
     what: "Hire, develop, and guide pre-sales Solutions Architects, with real technical depth and real career paths.",
-    me: "Building and leading customer engineering teams from the ground up has been the most rewarding part of my career. At Clearbit, I established Solutions Architecture, Customer Success Engineering, and Support Engineering as net-new functions spanning four product surfaces: Salesforce package, APIs, native integrations, and the platform itself. I hired and developed engineers and architects, raised the bar for technical guidance, and created career paths that supported growth from Support roles through Customer Success Engineering and Engineering project leaders. Years of running that, through Series A growth and a HubSpot acquisition, is the closest analog to building a team like this one.",
+    me: "Building and leading customer engineering teams from the ground up has been the most rewarding part of my career. At Clearbit, I established Solutions Architecture, Customer Success Engineering, and Support Engineering as net-new functions spanning four product surfaces: Salesforce package, APIs, native integrations, and the platform itself. I hired and developed engineers and architects, raised the bar for technical guidance, and created career paths that supported growth from Support roles through Customer Success Engineering and Engineering project leaders. Years of running that through Series A growth is the closest analog to building a team like this one.",
   },
   {
     area: "Sponsor strategic customers",
@@ -30,7 +30,7 @@ export function Closing() {
       <div className="mx-auto w-full max-w-[1080px]">
         <div className="mono mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.18em] text-[var(--color-subtle)]">
           <span className="inline-flex h-5 w-5 items-center justify-center rounded-full border border-[var(--color-line-strong)] text-[10px] text-[var(--color-muted)]">
-            02
+            01
           </span>
           <span>What I bring</span>
           <span className="h-px flex-1 bg-[var(--color-line)]" />

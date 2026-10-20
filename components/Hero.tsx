@@ -48,6 +48,15 @@ const PLATFORMS = [
   "Zapier",
 ];
 
+const STATS = [
+  { n: "10+", label: "years in growth-stage and enterprise customer engineering" },
+  { n: "3", label: "customer-engineering functions built from zero" },
+  { n: "1,000+", label: "customers supported, SMB to enterprise" },
+  { n: "4+", label: "production AI systems shipped with Claude" },
+  { n: "5", label: "physical businesses created in Mexico City" },
+  { n: "4.8★", label: "Google rating across those physical businesses, from 3,000+ reviews" },
+];
+
 const META = [
   "Mexico City",
   "10+ years at growth-stage startups",
@@ -121,12 +130,35 @@ export function Hero() {
               <CTA href="/resume.pdf" primary>
                 Resume
               </CTA>
-              <CTA href="#fit">What I bring</CTA>
+              <CTA href="mailto:ShirleyShaw.is@gmail.com">Email me</CTA>
               <CTA href="#systems">Selected builds</CTA>
               <CTA href="https://linkedin.com/in/shirleyshaw" external>
                 LinkedIn
               </CTA>
             </motion.div>
+
+            <motion.ul
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.36, ease }}
+              className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-line)] bg-[var(--color-line)] sm:grid-cols-3"
+            >
+              {STATS.map((s) => (
+                <li key={s.label} className="bg-[var(--color-bg-elevated)] px-4 py-3.5">
+                  <div className="serif text-[26px] leading-none tracking-[-0.02em] text-[var(--color-ink)]">
+                    {s.n.replace("★", "")}
+                    {s.n.includes("★") && (
+                      <span aria-label="stars" className="ml-0.5 align-[0.35em] text-[14px] text-[var(--color-ink-2)]">
+                        ★
+                      </span>
+                    )}
+                  </div>
+                  <div className="mt-1.5 text-[12.5px] leading-[1.4] text-[var(--color-muted)]">
+                    {s.label}
+                  </div>
+                </li>
+              ))}
+            </motion.ul>
           </div>
 
           {/* Portrait */}

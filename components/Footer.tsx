@@ -1,53 +1,41 @@
+import { CTA } from "@/components/ui/CTA";
+
 export function Footer() {
   return (
-    <footer className="relative border-t border-[var(--color-line)] px-6 py-12 sm:px-8 md:py-14">
+    <footer id="contact" className="relative scroll-mt-[-1rem] border-t border-[var(--color-line)] px-6 py-14 sm:px-8 md:py-20">
       <div className="mx-auto w-full max-w-[1080px]">
         <div className="grid gap-12 md:grid-cols-12 md:gap-10">
-          <div className="md:col-span-6">
-            <h2 className="serif text-[clamp(1.4rem,2.2vw,1.9rem)] font-normal leading-[1.2] tracking-[-0.012em] text-[var(--color-ink)]">
-              Email is the best path.
+          <div className="md:col-span-8">
+            <h2 className="serif text-[clamp(1.9rem,3.4vw,2.6rem)] font-normal leading-[1.06] tracking-[-0.018em] text-[var(--color-ink)]">
+              Next: leading customer-facing
+              <span className="block text-[var(--color-muted)]">
+                technical teams again.
+              </span>
             </h2>
+            <p className="serif mt-5 text-[16.5px] leading-[1.65] text-[var(--color-ink-2)]">
+              A decade architecting and solutioning across growth-stage and
+              enterprise tech. Three years building businesses and shipping
+              production AI with Claude. I&rsquo;m ready to bring both back to a
+              team that ships.
+            </p>
+            <div className="mt-6 flex flex-wrap items-center gap-2.5">
+              <CTA href="mailto:ShirleyShaw.is@gmail.com" primary>
+                Email me
+              </CTA>
+              <CTA href="/resume.pdf">Resume</CTA>
+              <CTA href="https://linkedin.com/in/shirleyshaw" external>
+                LinkedIn
+              </CTA>
+            </div>
             <a
               href="mailto:ShirleyShaw.is@gmail.com"
-              className="serif group mt-5 inline-flex items-baseline gap-3 text-[clamp(1.3rem,2.2vw,1.8rem)] tracking-tight text-[var(--color-ink)] transition-colors hover:text-[var(--color-accent)]"
+              className="mono mt-4 inline-block text-[11px] tracking-[0.06em] text-[var(--color-muted)] transition-colors hover:text-[var(--color-ink)]"
             >
-              <span className="link">ShirleyShaw.is@gmail.com</span>
-              <span
-                aria-hidden
-                className="text-[16px] transition-transform duration-300 group-hover:translate-x-1"
-              >
-                →
-              </span>
+              ShirleyShaw.is@gmail.com
             </a>
           </div>
 
-          <div className="md:col-span-3">
-            <div className="mono mb-4 text-[10.5px] uppercase tracking-[0.18em] text-[var(--color-subtle)]">
-              Elsewhere
-            </div>
-            <ul className="space-y-2.5 text-[14.5px]">
-              <li>
-                <a
-                  href="https://linkedin.com/in/shirleyshaw"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="link text-[var(--color-ink-2)]"
-                >
-                  linkedin.com/in/shirleyshaw
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/resume.pdf"
-                  className="link text-[var(--color-ink-2)]"
-                >
-                  Resume (PDF)
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="md:col-span-3">
+          <div className="md:col-span-4 md:pt-2">
             <div className="mono mb-4 text-[10.5px] uppercase tracking-[0.18em] text-[var(--color-subtle)]">
               Based in
             </div>

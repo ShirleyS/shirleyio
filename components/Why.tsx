@@ -25,7 +25,7 @@ const story = [
 export function Why() {
   return (
     <Section id="why" className="border-t border-[var(--color-line)]">
-      <Eyebrow index="01" label="Why I'm here" />
+      <Eyebrow index="03" label="Why I'm here" />
 
       <div className="mt-7 grid gap-8 md:mt-10 md:grid-cols-12 md:gap-10">
         <div className="md:col-span-4">

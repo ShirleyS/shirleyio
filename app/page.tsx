@@ -4,7 +4,6 @@ import { Why } from "@/components/Why";
 import { Timeline } from "@/components/Timeline";
 import { Systems } from "@/components/Systems";
 import { Closing } from "@/components/Closing";
-import { Coda } from "@/components/Coda";
 import { Footer } from "@/components/Footer";
 
 export default function Page() {
@@ -12,11 +11,10 @@ export default function Page() {
     <main className="grain relative min-h-dvh">
       <Nav />
       <Hero />
-      <Why />
       <Closing />
       <Timeline />
+      <Why />
       <Systems />
-      <Coda />
       <Footer />
     </main>
   );

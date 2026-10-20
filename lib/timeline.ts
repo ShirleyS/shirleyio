@@ -87,7 +87,7 @@ export const timeline: TimelineEntry[] = [
     logo: "/experience/oracle.svg",
     logoHeight: 15,
     role: "Senior Expert Services Specialist",
-    range: "2013–2014",
+    range: "2013–2014 · Responsys, acq. Oracle 2014",
     location: "San Francisco",
     positioning:
       "Enterprise email: multi-touch lifecycle programs at scale, with the reporting anomalies and segmentation puzzles that come with that volume.",
