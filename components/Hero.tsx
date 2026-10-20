@@ -97,9 +97,11 @@ export function Hero() {
               transition={{ duration: 0.9, delay: 0.05, ease }}
               className="serif text-[clamp(2rem,3.5vw,2.85rem)] font-normal leading-[1.08] tracking-[-0.02em] text-[var(--color-ink)]"
             >
-              Solutions Architect for growth-stage and enterprise teams.
-              <span className="mt-1 block italic text-[var(--color-muted)]">
-                Now shipping production AI with Claude.
+              Solutions Architecture leader for{" "}
+              <span className="whitespace-nowrap">growth-stage</span> and enterprise teams.
+              <span className="mt-3 block text-[0.6em] leading-[1.3] italic text-[var(--color-muted)]">
+                <span className="sm:block">A decade with customers.</span>{" "}
+                <span className="sm:block">A product-minded, AI-enabled leader.</span>
               </span>
             </motion.h1>
 
