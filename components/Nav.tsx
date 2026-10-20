@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 
 const links = [
   { href: "#why", label: "Why I'm here" },
-  { href: "#apply", label: "Why this role" },
-  { href: "#systems", label: "Builds" },
+  { href: "#fit", label: "What I bring" },
   { href: "#experience", label: "Experience" },
   { href: "#chapter", label: "The Detour" },
+  { href: "#systems", label: "Builds" },
   { href: "#coda", label: "Coming back" },
 ];
 
@@ -29,9 +29,9 @@ export function Nav() {
         left: 0,
         right: 0,
         zIndex: 60,
-        backgroundColor: scrolled ? "#f6f2ea" : "transparent",
+        backgroundColor: scrolled ? "var(--color-bg)" : "transparent",
         borderBottom: scrolled
-          ? "1px solid #e3ddd0"
+          ? "1px solid var(--color-line)"
           : "1px solid transparent",
         paddingTop: scrolled ? 8 : 16,
         paddingBottom: scrolled ? 8 : 16,
@@ -50,7 +50,7 @@ export function Nav() {
           />
           <span>Shirley Shaw</span>
         </a>
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden items-center gap-1 lg:flex">
           {links.map((l) => (
             <a
               key={l.href}

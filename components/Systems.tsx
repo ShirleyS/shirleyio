@@ -1,52 +1,64 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Section, Eyebrow } from "@/components/ui/Section";
 import { Pill } from "@/components/ui/Pill";
-import { projects } from "@/lib/projects";
+import { projects, type Project } from "@/lib/projects";
 import { cn } from "@/lib/cn";
 
 export function Systems() {
   const [active, setActive] = useState<string>(projects[0].slug);
   const project = projects.find((p) => p.slug === active)!;
+  const detailRef = useRef<HTMLDivElement>(null);
+
+  const select = (slug: string) => {
+    setActive(slug);
+    // On small screens the detail sits below a stack of cards, so bring it into view.
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      requestAnimationFrame(() =>
+        detailRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }),
+      );
+    }
+  };
 
   return (
     <Section id="systems" className="border-t border-[var(--color-line)]">
-      <Eyebrow index="03" label="Selected Builds" />
+      <Eyebrow index="05" label="Selected Builds" />
 
       <div className="mt-7 md:mt-10">
-        <h2 className="serif max-w-[26ch] text-[clamp(2rem,3.8vw,3rem)] font-normal leading-[1.05] tracking-[-0.018em] text-[var(--color-ink)]">
-          Three builds in production.
-        </h2>
-        <div className="mt-7 grid gap-6 md:grid-cols-3 md:gap-7">
-          <JDMap
-            project="RIOS"
-            slug="rios"
-            url="https://riosuno.com"
-            active={active === "rios"}
-            onSelect={setActive}
-            note="Measurement and reporting infrastructure across five operating businesses — completeness, reconciliation, and the executive layer that makes the numbers actionable."
-          />
-          <JDMap
-            project="CasaRuta"
-            slug="casaruta"
-            url="https://casaruta.com"
-            active={active === "casaruta"}
-            onSelect={setActive}
-            note="A normalized product catalog, eligibility schema, and programmatic surface — the platform-shaped work of comparing 104 mortgage products across a standardized set of attributes."
-          />
-          <JDMap
-            project="CapitalRuta"
-            slug="capitalruta"
-            url="https://capitalruta.com"
-            active={active === "capitalruta"}
-            onSelect={setActive}
-            note="A capital matching layer for Mexican SMBs. Rule-based today; the AI underwriting layer comes later, sitting on top of the rules that already work — not in place of them."
-          />
+        <div className="grid gap-4 md:grid-cols-12 md:items-end md:gap-10">
+          <h2 className="serif text-[clamp(2rem,3.8vw,3rem)] font-normal leading-[1.05] tracking-[-0.018em] text-[var(--color-ink)] md:col-span-7">
+            What I built along the way.
+            <span className="block text-[var(--color-muted)]">
+              {projectCount(projects.length)} in production.
+            </span>
+          </h2>
+          <p className="max-w-[46ch] text-[15.5px] leading-[1.65] text-[var(--color-muted)] md:col-span-5">
+            Each one shipped with Claude, live today, and solving a problem
+            I hit first-hand running businesses in Mexico. Pick one to see
+            the architecture, where AI sits, and what it changed.
+          </p>
+        </div>
+
+        <div
+          role="tablist"
+          aria-label="Builds"
+          className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
+        >
+          {projects.map((p) => (
+            <BuildCard
+              key={p.slug}
+              project={p}
+              active={p.slug === active}
+              onSelect={select}
+            />
+          ))}
         </div>
       </div>
 
+      <div ref={detailRef} className="scroll-mt-20" />
       <AnimatePresence mode="wait">
         <motion.div
           key={project.slug}
@@ -54,6 +66,8 @@ export function Systems() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -4 }}
           transition={{ duration: 0.35, ease: [0.2, 0.65, 0.3, 0.95] }}
+          id="build-detail"
+          role="tabpanel"
           className="mt-7"
         >
           {/* Header card */}
@@ -110,6 +124,8 @@ export function Systems() {
               />
             </div>
           </div>
+
+          <Screens project={project} />
 
           {/* Architecture */}
           <div className="mt-7 grid gap-8 md:grid-cols-12">
@@ -188,65 +204,201 @@ export function Systems() {
   );
 }
 
-function JDMap({
-  area,
+function projectCount(n: number) {
+  const words = ["Zero", "One", "Two", "Three", "Four", "Five", "Six"];
+  return `${words[n] ?? n} build${n === 1 ? "" : "s"}`;
+}
+
+function BuildCard({
   project,
-  note,
-  slug,
-  url,
   active,
   onSelect,
 }: {
-  area?: string;
-  project: string;
-  note: string;
-  slug: string;
-  url?: string;
+  project: Project;
   active: boolean;
   onSelect: (slug: string) => void;
 }) {
+  const thumb = project.screens[0];
   return (
-    <div
-      role="button"
-      tabIndex={0}
-      onClick={() => onSelect(slug)}
-      onKeyDown={(e) => {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          onSelect(slug);
-        }
-      }}
-      aria-pressed={active}
+    <button
+      type="button"
+      role="tab"
+      aria-selected={active}
+      aria-controls="build-detail"
+      onClick={() => onSelect(project.slug)}
       className={cn(
-        "group block w-full cursor-pointer rounded-[var(--radius-md)] border bg-[var(--color-bg-elevated)] p-5 text-left shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-lift)]",
+        "group flex w-full cursor-pointer flex-col overflow-hidden rounded-[var(--radius-md)] border bg-[var(--color-bg-elevated)] text-left shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-lift)]",
         active
           ? "border-[var(--color-accent)]/60 ring-1 ring-[var(--color-accent)]/30"
           : "border-[var(--color-line)] hover:border-[var(--color-line-strong)]",
       )}
     >
-      {area && (
-        <div className="mono mb-2 text-[10px] uppercase tracking-[0.18em] text-[var(--color-accent)]">
-          {area}
-        </div>
-      )}
-      <div className="serif text-[18px] tracking-tight text-[var(--color-ink)]">
-        {project}
+      <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-[var(--color-line)] bg-[var(--color-bg-deep)]">
+        <Image
+          src={thumb.src}
+          alt=""
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 260px"
+          className={cn(
+            "object-cover object-top transition-all duration-500 group-hover:scale-[1.03]",
+            active ? "opacity-100" : "opacity-90 saturate-[0.85] group-hover:opacity-100 group-hover:saturate-100",
+          )}
+        />
       </div>
-      <p className="mt-2.5 text-[13.5px] leading-[1.6] text-[var(--color-muted)]">
-        {note}
-      </p>
-      {url && (
-        <a
-          href={url}
-          target="_blank"
-          rel="noreferrer"
-          onClick={(e) => e.stopPropagation()}
-          className="mono mt-3 inline-flex items-center gap-1 text-[10.5px] uppercase tracking-[0.18em] text-[var(--color-ink-2)] transition-colors hover:text-[var(--color-accent)]"
+      <div className="flex flex-1 flex-col p-5">
+        <div className="flex items-baseline justify-between gap-3">
+          <span className="serif text-[18px] tracking-tight text-[var(--color-ink)]">
+            {project.name}
+          </span>
+          <span
+            className={cn(
+              "mono text-[10px] uppercase tracking-[0.16em] transition-colors",
+              active ? "text-[var(--color-accent)]" : "text-[var(--color-subtle)]",
+            )}
+          >
+            {active ? "Viewing" : "View →"}
+          </span>
+        </div>
+        <p className="mt-2.5 text-[13.5px] leading-[1.6] text-[var(--color-muted)]">
+          {project.card}
+        </p>
+        <span className="mono mt-auto pt-4 text-[10.5px] uppercase tracking-[0.16em] text-[var(--color-ink-2)]">
+          {project.url.replace(/^https?:\/\//, "")}
+        </span>
+      </div>
+    </button>
+  );
+}
+
+function Screens({ project }: { project: Project }) {
+  const [index, setIndex] = useState(0);
+  const count = project.screens.length;
+  const screen = project.screens[index] ?? project.screens[0];
+  const host = project.url.replace(/^https?:\/\//, "");
+  const go = (delta: number) => setIndex((i) => (i + delta + count) % count);
+
+  return (
+    <figure
+      className="mt-7"
+      tabIndex={-1}
+      onKeyDown={(e) => {
+        if (e.key === "ArrowRight") go(1);
+        if (e.key === "ArrowLeft") go(-1);
+      }}
+    >
+      <div className="overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-line-strong)] bg-[var(--color-bg-elevated)] shadow-[var(--shadow-lift)]">
+        {/* Browser chrome */}
+        <div className="flex items-center gap-3 border-b border-[var(--color-line)] bg-[var(--color-bg-deep)] px-4 py-2.5">
+          <span aria-hidden className="hidden gap-1.5 sm:flex">
+            <span className="h-2.5 w-2.5 rounded-full bg-[var(--color-line-strong)]" />
+            <span className="h-2.5 w-2.5 rounded-full bg-[var(--color-line-strong)]" />
+            <span className="h-2.5 w-2.5 rounded-full bg-[var(--color-line-strong)]" />
+          </span>
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noreferrer"
+            className="mono mx-auto inline-flex min-w-0 max-w-[70%] items-center gap-1.5 rounded-full border border-[var(--color-line)] bg-[var(--color-bg-elevated)] px-3 py-1 text-[11px] tracking-[0.04em] text-[var(--color-muted)] transition-colors hover:text-[var(--color-accent)]"
+          >
+            <span className="truncate">
+              {host}
+              <span className="text-[var(--color-subtle)]">{screen.path ?? ""}</span>
+            </span>
+            <span aria-hidden className="text-[var(--color-subtle)]">↗</span>
+          </a>
+          <div className="flex items-center gap-1">
+            <ArrowButton label="Previous screen" onClick={() => go(-1)}>←</ArrowButton>
+            <span className="mono w-[38px] text-center text-[10.5px] tabular-nums tracking-[0.08em] text-[var(--color-subtle)]">
+              {index + 1}/{count}
+            </span>
+            <ArrowButton label="Next screen" onClick={() => go(1)}>→</ArrowButton>
+          </div>
+        </div>
+        <button
+          type="button"
+          onClick={() => go(1)}
+          aria-label={`${screen.alt}. Show next screen`}
+          className="relative block aspect-[16/10] w-full cursor-e-resize bg-[var(--color-bg-deep)]"
         >
-          {url.replace(/^https?:\/\//, "")}
-          <span aria-hidden className="text-[var(--color-subtle)]">↗</span>
-        </a>
-      )}
-    </div>
+          <Image
+            key={screen.src}
+            src={screen.src}
+            alt={screen.alt}
+            fill
+            sizes="(max-width: 1080px) 100vw, 1080px"
+            className="fade-in object-cover object-top"
+          />
+        </button>
+      </div>
+
+      <figcaption className="mt-3 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+        <span className="serif text-[15px] tracking-tight text-[var(--color-ink)]">
+          {screen.label}
+        </span>
+        <span className="mono text-[10px] uppercase tracking-[0.16em] text-[var(--color-subtle)]">
+          {screen.note ?? "Live site · captured Oct 2026"}
+        </span>
+      </figcaption>
+
+      {/* Thumbnail strip */}
+      <div className="-mx-1 mt-3 flex snap-x gap-2.5 overflow-x-auto px-1 pb-1">
+        {project.screens.map((s, i) => (
+          <button
+            key={s.src}
+            type="button"
+            onClick={() => setIndex(i)}
+            aria-pressed={i === index}
+            aria-label={s.label}
+            className="group w-[132px] shrink-0 snap-start text-left sm:w-[150px]"
+          >
+            <span
+              className={cn(
+                "relative block aspect-[16/10] overflow-hidden rounded-[var(--radius-sm)] border bg-[var(--color-bg-deep)] transition-all duration-300",
+                i === index
+                  ? "border-[var(--color-accent)] ring-1 ring-[var(--color-accent)]/40"
+                  : "border-[var(--color-line)] opacity-75 group-hover:border-[var(--color-line-strong)] group-hover:opacity-100",
+              )}
+            >
+              <Image
+                src={s.src}
+                alt=""
+                fill
+                sizes="150px"
+                className="object-cover object-top"
+              />
+            </span>
+            <span
+              className={cn(
+                "mono mt-1.5 block truncate text-[9.5px] uppercase tracking-[0.14em] transition-colors",
+                i === index ? "text-[var(--color-accent)]" : "text-[var(--color-subtle)] group-hover:text-[var(--color-ink-2)]",
+              )}
+            >
+              {s.label}
+            </span>
+          </button>
+        ))}
+      </div>
+    </figure>
+  );
+}
+
+function ArrowButton({
+  label,
+  onClick,
+  children,
+}: {
+  label: string;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-label={label}
+      className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-[var(--color-line)] bg-[var(--color-bg-elevated)] text-[12px] text-[var(--color-muted)] transition-colors hover:border-[var(--color-ink)] hover:text-[var(--color-ink)]"
+    >
+      {children}
+    </button>
   );
 }

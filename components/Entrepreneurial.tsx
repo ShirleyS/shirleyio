@@ -52,13 +52,14 @@ const skills = [
   "Analytics and Attribution",
   "ICP and Targeting",
   "Forecasting and Modeling",
-  "Modern Martech Familiarity"
+  "Modern Martech Familiarity",
+  "Product-First Mindset",
 ];
 
 export function Entrepreneurial() {
   return (
     <Section id="chapter" className="border-t border-[var(--color-line)]">
-      <Eyebrow index="05" label="The Detour" />
+      <Eyebrow index="04" label="The Detour" />
 
       <div className="mt-7 grid gap-8 md:mt-10 md:grid-cols-12">
         <div className="md:col-span-6">
@@ -101,24 +102,27 @@ export function Entrepreneurial() {
 
         <div className="prose-editorial md:col-span-6">
           <p>
-            After a decade in tech, I&rsquo;d done most of what I&rsquo;d set
-            out to do &mdash; except build a business from zero, on my own
-            terms. So my partner and I moved to CDMX and together started a
-            small portfolio of operating businesses. The
-            systems thinking carried over. Only the inputs changed &mdash;
-            customers, staff, regulators, supply chain.
+            After a decade in tech, I&rsquo;d checked off most of what I set
+            out to do, except build a business from zero on my own terms. So
+            my partner and I moved to CDMX and did it, starting from the first
+            hire. The work changed less than you&rsquo;d think. Customers,
+            staff, regulators, and suppliers became the inputs; the systems
+            thinking stayed exactly the same.
           </p>
           <p>
-            Five live locations across CDMX, all operating today. The startup
-            skillsets I built in tech &mdash; instrumentation, measurement,
-            systems thinking, ruthless prioritization &mdash; are the direct
-            reason we&rsquo;ve been able to scale from one location to five,
-            and what sets us apart from most operators in the category.
+            Today that&rsquo;s five live locations across CDMX. We got from
+            one to five by running them the way I ran customer engineering
+            orgs: instrument everything, measure what matters, automate the
+            manual loops, and prioritize ruthlessly. When the tools we needed
+            didn&rsquo;t exist, I built them. That&rsquo;s where RIOS came
+            from, and it&rsquo;s why the tech never went stale for me. I&rsquo;ve
+            been the architect, the product manager, and the first customer
+            the whole time.
           </p>
         </div>
       </div>
 
-      {/* Previous career goals — all done */}
+      {/* Previous career goals, all done */}
       <div className="mt-9 border-t border-[var(--color-line)] pt-6 md:mt-10">
         <div className="mono mb-4 flex items-center gap-3 text-[10.5px] uppercase tracking-[0.2em] text-[var(--color-subtle)]">
           <span>Previous career goals</span>
@@ -127,7 +131,7 @@ export function Entrepreneurial() {
         </div>
         <ol className="grid grid-cols-1 gap-px overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-line)] bg-[var(--color-line)] sm:grid-cols-2">
           {[
-            "Early on — work at a big company.",
+            "Early on, work at a big company.",
             "Build and lead great teams.",
             "Make meaningful contributions to a company that lead to a successful exit event.",
             "Start my own thing and make it successful.",
@@ -244,7 +248,7 @@ export function Entrepreneurial() {
               The edge most F&amp;B operators don&rsquo;t bring
             </span>
           </div>
-          <ul className="grid grid-cols-2 gap-px overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-line)] bg-[var(--color-line)] sm:grid-cols-3 md:grid-cols-4">
+          <ul className="grid grid-cols-2 gap-px overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-line)] bg-[var(--color-line)] sm:grid-cols-3 md:grid-cols-5">
             {skills.map((s) => (
               <li
                 key={s}
@@ -256,18 +260,6 @@ export function Entrepreneurial() {
           </ul>
         </div>
       </div>
-
-      <style>{`
-        .prose-editorial p {
-          font-family: var(--font-serif);
-          font-size: clamp(16px, 1.3vw, 17.5px);
-          line-height: 1.6;
-          letter-spacing: -0.005em;
-          color: var(--color-ink-2);
-          margin-bottom: 1.1em;
-        }
-        .prose-editorial p:last-child { margin-bottom: 0; }
-      `}</style>
     </Section>
   );
 }

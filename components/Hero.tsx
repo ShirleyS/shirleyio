@@ -2,9 +2,16 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Targeted, ROLE } from "@/components/Targeted";
+import { CTA } from "@/components/ui/CTA";
 
 const ease = [0.2, 0.65, 0.3, 0.95] as const;
+
+const META = [
+  "Mexico City",
+  "10+ years at growth-stage startups",
+  "Operator-founder",
+  "Open to travel: SF, NYC",
+];
 
 export function Hero() {
   return (
@@ -13,44 +20,35 @@ export function Hero() {
       className="relative overflow-hidden px-5 pb-8 pt-14 sm:px-8 md:pb-10 md:pt-20 lg:pt-24"
     >
       <div className="mx-auto w-full max-w-[1080px]">
-        {/* Role-target strip */}
-        <motion.div
+        {/* Top meta strip */}
+        <motion.ul
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease }}
-          className="mb-5"
+          className="mono mb-7 flex flex-wrap items-center gap-x-4 gap-y-1.5 md:gap-x-2.5 text-[10px] uppercase tracking-[0.16em] text-[var(--color-subtle)] md:text-[11px] md:tracking-[0.18em]"
         >
-          <Targeted role={ROLE.role} company={ROLE.company} href={ROLE.href} />
-        </motion.div>
-
-        {/* Top meta strip */}
-        <motion.div
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.05, ease }}
-          className="mono mb-6 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-[10px] uppercase tracking-[0.16em] text-[var(--color-subtle)] md:gap-x-4 md:text-[11px] md:tracking-[0.18em]"
-        >
-          <span>Based in Mexico City</span>
-          <span className="hidden text-[var(--color-line-strong)] md:inline">/</span>
-          <span>10+ yrs at growth-stage startups · Operator-founder · Daily Claude builder</span>
-          <span className="hidden text-[var(--color-line-strong)] md:inline">/</span>
-          <span>Open to travel — SF, NYC</span>
-        </motion.div>
+          {META.map((m, i) => (
+            <li key={m} className="flex items-center gap-2.5 whitespace-nowrap">
+              {i > 0 && (
+                <span aria-hidden className="hidden h-1 w-1 rounded-full bg-[var(--color-line-strong)] md:inline-block" />
+              )}
+              {m}
+            </li>
+          ))}
+        </motion.ul>
 
         {/* Headline + portrait */}
-        <div className="grid items-start gap-7 md:grid-cols-12 md:gap-10">
+        <div className="grid items-start gap-8 md:grid-cols-12 md:gap-10">
           <div className="md:col-span-9">
             <motion.h1
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.05, ease }}
-              className="serif text-[clamp(1.75rem,2.6vw,2.1rem)] font-normal leading-[1.18] tracking-[-0.015em] text-[var(--color-ink)]"
+              className="serif text-[clamp(2rem,3.5vw,2.85rem)] font-normal leading-[1.08] tracking-[-0.02em] text-[var(--color-ink)]"
             >
-              <span className="block">
-                Solutions Architect for growth-stage and enterprise orgs.
-              </span>
-              <span className="block italic text-[var(--color-ink-2)]">
-                Now shipping production AI systems with Claude.
+              Solutions Architect for growth-stage and enterprise teams.
+              <span className="mt-1 block italic text-[var(--color-muted)]">
+                Now shipping production AI with Claude.
               </span>
             </motion.h1>
 
@@ -58,29 +56,30 @@ export function Hero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.18, ease }}
-              className="mt-5 max-w-[68ch] text-[15.5px] leading-[1.65] text-[var(--color-muted)] md:text-[16.5px]"
+              className="mt-6 max-w-[60ch] text-[15.5px] leading-[1.7] text-[var(--color-muted)] md:text-[16.5px]"
             >
-              I&rsquo;m Shirley. Pre-sales Solutions Architecture, and post-sales Customer Success Engineering and Support leadership at{" "}
+              I&rsquo;m Shirley. I built and led Solutions Architecture,
+              Customer Success Engineering, and Support at{" "}
               <span className="text-[var(--color-ink)]">Clearbit</span>{" "}
-              <span className="text-[var(--color-subtle)]">(acq. HubSpot)</span>{" "}
-              and{" "}
-              <span className="text-[var(--color-ink)]">Demandbase</span>
-              &mdash; serving tier-one customers like Stripe, Slack, Meta, Intercom, and Segment.
-              Today, in Mexico City: five live businesses and AI-native systems I
-              ship with{" "}
-              <span className="text-[var(--color-ink)]">Claude</span> daily.
+              <span className="text-[var(--color-subtle)]">(acq. HubSpot)</span>,
+              and led Solutions Engineering at{" "}
+              <span className="text-[var(--color-ink)]">Demandbase</span>, for
+              tier-one customers like Stripe, Slack, Meta, Intercom, and
+              Segment. Today: five live businesses in Mexico City, and the
+              AI-native systems behind them, built with{" "}
+              <span className="text-[var(--color-ink)]">Claude</span>.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.28, ease }}
-              className="mt-5 flex flex-wrap items-center gap-2.5"
+              className="mt-7 flex flex-wrap items-center gap-2.5"
             >
               <CTA href="/resume.pdf" primary>
                 Resume
               </CTA>
-              <CTA href="#apply">Why this role</CTA>
+              <CTA href="#fit">What I bring</CTA>
               <CTA href="#systems">Selected builds</CTA>
               <CTA href="https://linkedin.com/in/shirleyshaw" external>
                 LinkedIn
@@ -99,7 +98,7 @@ export function Hero() {
           </motion.div>
         </div>
 
-        {/* Bottom marquee — customers + platforms */}
+        {/* Bottom marquee: customers + platforms */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -182,49 +181,15 @@ export function Hero() {
   );
 }
 
-function CTA({
-  href,
-  children,
-  primary,
-  external,
-}: {
-  href: string;
-  children: React.ReactNode;
-  primary?: boolean;
-  external?: boolean;
-}) {
-  const base =
-    "group inline-flex items-center gap-2 rounded-full border px-4 py-2 text-[13px] tracking-tight transition-all duration-300";
-  const styles = primary
-    ? "border-[var(--color-ink)] bg-[var(--color-ink)] text-[var(--color-bg)] hover:bg-[var(--color-ink-2)] hover:shadow-[var(--shadow-lift)]"
-    : "border-[var(--color-line-strong)] bg-[var(--color-bg-elevated)]/60 text-[var(--color-ink)] hover:border-[var(--color-ink)] hover:bg-[var(--color-bg-elevated)]";
-  return (
-    <a
-      href={href}
-      target={external ? "_blank" : undefined}
-      rel={external ? "noreferrer" : undefined}
-      className={`${base} ${styles}`}
-    >
-      {children}
-      <span
-        aria-hidden
-        className="inline-block translate-x-0 transition-transform duration-300 group-hover:translate-x-0.5"
-      >
-        →
-      </span>
-    </a>
-  );
-}
-
 function Portrait() {
   return (
     <figure className="relative">
       {/* Photo plate with refined matte + warm shadow */}
       <div
-        className="group relative aspect-[4/5] w-full overflow-hidden rounded-[12px] bg-[#efeae0]"
+        className="group relative aspect-[4/5] w-full overflow-hidden rounded-[12px] bg-[var(--color-bg-deep)]"
         style={{
           boxShadow:
-            "0 1px 2px rgba(24,24,24,0.05), 0 12px 28px -12px rgba(72,32,16,0.20), 0 36px 64px -28px rgba(24,24,24,0.18)",
+            "0 1px 2px rgba(24,24,24,0.05), 0 12px 28px -12px rgba(20,28,44,0.16), 0 36px 64px -28px rgba(24,24,24,0.18)",
         }}
       >
         <Image
@@ -236,13 +201,13 @@ function Portrait() {
           className="object-cover object-[52%_28%] transition-transform duration-[1200ms] ease-out group-hover:scale-[1.02]"
           style={{ filter: "saturate(0.94) contrast(1.04)" }}
         />
-        {/* Soft editorial gradient — subtle warmth at top, mild shade at bottom */}
+        {/* Soft editorial gradient: subtle warmth at top, mild shade at bottom */}
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, rgba(255,250,240,0.10) 0%, transparent 22%, transparent 75%, rgba(40,22,14,0.16) 100%)",
+              "linear-gradient(180deg, rgba(255,255,255,0.08) 0%, transparent 22%, transparent 75%, rgba(16,22,34,0.14) 100%)",
           }}
         />
         {/* Inner hairline highlight for crisp framing */}
@@ -250,7 +215,7 @@ function Portrait() {
           aria-hidden
           className="pointer-events-none absolute inset-0 rounded-[12px] ring-1 ring-inset ring-black/[0.06]"
         />
-        {/* Subtle corner crop-mark — quiet editorial detail */}
+        {/* Subtle corner crop-mark: quiet editorial detail */}
         <span
           aria-hidden
           className="pointer-events-none absolute right-2.5 top-2.5 h-3.5 w-3.5"
@@ -260,7 +225,7 @@ function Portrait() {
         </span>
       </div>
 
-      {/* Caption — refined two-cell layout */}
+      {/* Caption: refined two-cell layout */}
       <figcaption className="mt-3.5 flex items-center justify-between gap-3">
         <div className="flex items-baseline gap-2">
           <span className="serif text-[13.5px] tracking-tight text-[var(--color-ink)]">

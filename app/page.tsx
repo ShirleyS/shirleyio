@@ -1,6 +1,6 @@
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
-import { WhyAnthropic } from "@/components/WhyAnthropic";
+import { Why } from "@/components/Why";
 import { Timeline } from "@/components/Timeline";
 import { Entrepreneurial } from "@/components/Entrepreneurial";
 import { Systems } from "@/components/Systems";
@@ -13,11 +13,11 @@ export default function Page() {
     <main className="grain relative min-h-dvh">
       <Nav />
       <Hero />
-      <WhyAnthropic />
+      <Why />
       <Closing />
-      <Systems />
       <Timeline />
       <Entrepreneurial />
+      <Systems />
       <Coda />
       <Footer />
     </main>

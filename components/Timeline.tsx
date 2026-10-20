@@ -11,17 +11,16 @@ export function Timeline() {
   const [open, setOpen] = useState<string | null>(timeline[0].company);
   return (
     <Section id="experience" className="border-t border-[var(--color-line)]">
-      <Eyebrow index="04" label="Experience" />
+      <Eyebrow index="03" label="Experience" />
 
       <div className="mt-7 grid gap-8 md:mt-10 md:grid-cols-12">
         <div className="md:col-span-4">
           <h2 className="serif text-[clamp(1.9rem,3.6vw,2.8rem)] font-normal leading-[1.08] tracking-[-0.018em] text-[var(--color-ink)]">
             Ten plus years building, integrating, and deploying the tools sales,
-            marketing, and revenue teams rely on. 
-            </h2>
-            <br></br>
-            <h2 className="serif text-[clamp(1.9rem,3.6vw,2.8rem)] font-normal leading-[1.08] tracking-[-0.018em] text-[var(--color-ink)]">  
-            Before AI.
+            marketing, and revenue teams rely on.
+            <span className="mt-[0.6em] block italic text-[var(--color-muted)]">
+              Before AI.
+            </span>
           </h2>
           <p className="mono mt-6 text-[11px] uppercase tracking-[0.18em] text-[var(--color-subtle)]">
             Click any row to expand
@@ -90,7 +89,7 @@ export function Timeline() {
                           isOpen && "text-[var(--color-accent)]",
                         )}
                       >
-                        {isOpen ? "—" : "+"}
+                        {isOpen ? "−" : "+"}
                       </span>
                     </div>
 

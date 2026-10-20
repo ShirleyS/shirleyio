@@ -16,7 +16,7 @@ const serif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "Shirley Shaw — Operational systems, martech, AI workflows",
+  title: "Shirley Shaw · Operational systems, martech, AI workflows",
   description:
     "10+ years building martech, customer data, and analytics infrastructure. Currently building AI-native operational systems from Mexico City.",
   metadataBase: new URL("https://shirley.io"),
