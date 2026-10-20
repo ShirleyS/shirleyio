@@ -168,11 +168,11 @@ export const projects: Project[] = [
       },
     ],
     tagline:
-      "Ticketing and payments for the supper clubs, workshops, and tastings of Mexico City",
+      "Tickets, payments, and promotion of Workshops, Tours, and Other Events in Mexico",
     oneLiner:
       "An organizer shares one link. The platform takes card or SPEI payment, holds seats, sends branded QR passes, and pays the host into their own Stripe account 24 hours after the event. Bilingual, mobile-first, and free for free events.",
     problem:
-      "Small organizers in Mexico City (supper clubs, ceramics workshops, tastings, classes) sell through Instagram DMs, WhatsApp, and bank transfers. Capacity lives in a notebook, payments are reconciled by hand, and the big ticketing platforms are built and priced for concerts, not a 20-seat dinner paid by SPEI.",
+      "Small organizers in Mexico City (supper clubs, ceramics workshops, tastings, classes) sell through Instagram DMs, WhatsApp, and bank transfers. Capacity lives in a notebook, payments are reconciled by hand, and the big ticketing platforms are built and priced for concerts, not a 20-seat dinner.",
     architecture: [
       {
         layer: "Booking engine",
@@ -209,7 +209,8 @@ export const projects: Project[] = [
       "Netlify",
     ],
     impact: [
-      "Live and selling tickets in CDMX. Organizers go from &ldquo;tell us about your event&rdquo; to a shareable page in a day.",
+      "Live and selling: 125 tickets across 59 bookings and MX$47,785 in ticket sales (before service fees) in the last 30 days, from 2,242 event-page visits, a 2.2% conversion rate.",
+      "Organizers go from &ldquo;tell us about your event&rdquo; to a shareable page in a day.",
       "Hosts are paid into their own Stripe account after the event, with refunds, reschedules, and cancellations handled without a support thread.",
       "One codebase serves buyers, hosts, and admins in Spanish and English, on any phone.",
     ],

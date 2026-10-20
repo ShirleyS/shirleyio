@@ -4,7 +4,7 @@ import { CTA } from "@/components/ui/CTA";
 export function Coda() {
   return (
     <Section id="coda" className="border-t border-[var(--color-line)]">
-      <Eyebrow index="06" label="Coming back" />
+      <Eyebrow index="05" label="Coming back" />
 
       <div className="mt-7 grid gap-8 md:mt-10 md:grid-cols-12 md:gap-10">
         <div className="md:col-span-5">

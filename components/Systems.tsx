@@ -25,7 +25,7 @@ export function Systems() {
 
   return (
     <Section id="systems" className="border-t border-[var(--color-line)]">
-      <Eyebrow index="05" label="Selected Builds" />
+      <Eyebrow index="04" label="Selected Builds" />
 
       <div className="mt-7 md:mt-10">
         <div className="grid gap-4 md:grid-cols-12 md:items-end md:gap-10">
@@ -138,12 +138,17 @@ export function Systems() {
                 {project.architecture.map((a, i) => (
                   <li
                     key={a.layer}
-                    className="group grid grid-cols-[auto_1fr] gap-5 bg-[var(--color-bg-elevated)] p-5 transition-colors hover:bg-[var(--color-bg-deep)]"
+                    className="group grid grid-cols-[6.75rem_1fr] gap-4 bg-[var(--color-bg-elevated)] p-5 transition-colors hover:bg-[var(--color-bg-deep)] sm:grid-cols-[8.5rem_1fr] sm:gap-5"
                   >
-                    <div className="mono pt-0.5 text-[10.5px] uppercase tracking-[0.18em] text-[var(--color-subtle)] group-hover:text-[var(--color-accent)]">
+                    <div className="mono pt-0.5 text-[10px] uppercase leading-[1.45] tracking-[0.12em] text-[var(--color-subtle)] group-hover:text-[var(--color-accent)] sm:text-[10.5px] sm:tracking-[0.18em]">
                       <div>0{i + 1}</div>
+                      {/* One word per row, so every description starts at the same edge. */}
                       <div className="mt-1.5 text-[var(--color-ink-2)]">
-                        {a.layer}
+                        {a.layer.split(" ").map((w, j) => (
+                          <span key={j} className="block">
+                            {w}
+                          </span>
+                        ))}
                       </div>
                     </div>
                     <p className="text-[14.5px] leading-[1.6] text-[var(--color-muted)]">

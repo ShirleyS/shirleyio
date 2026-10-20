@@ -6,7 +6,6 @@ const links = [
   { href: "#why", label: "Why I'm here" },
   { href: "#fit", label: "What I bring" },
   { href: "#experience", label: "Experience" },
-  { href: "#chapter", label: "The Detour" },
   { href: "#systems", label: "Builds" },
   { href: "#coda", label: "Coming back" },
 ];

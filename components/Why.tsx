@@ -1,4 +1,5 @@
 import { Section, Eyebrow } from "@/components/ui/Section";
+import { Portfolio } from "@/components/Portfolio";
 
 const criteria = [
   { n: "01", k: "A place with an overwhelming amount of opportunities to continue learning" },
@@ -9,7 +10,7 @@ const criteria = [
 const story = [
   {
     label: "Since 2023",
-    text: "My partner and I built five businesses in Mexico City from zero, and I built RIOS, the platform that runs them. Then I engineered myself out of the day-to-day: hired and developed the team, wrote the processes, removed every single point of failure. My partner leads the operation now, and the businesses run whether I’m in the room or not.",
+    text: "My partner and I built five businesses in Mexico City from zero, and I built RIOS, the platform that runs them. Then I engineered myself out of the day-to-day: hired and developed the team, wrote the processes, reduced a majority of the single points of failure. My partner leads the operation now, and the businesses run whether I’m in the room or not.",
   },
   {
     label: "Why the skills stayed sharp",
@@ -41,9 +42,9 @@ export function Why() {
 
         <div className="md:col-span-8">
           <p className="serif text-[clamp(18px,1.6vw,21px)] leading-[1.5] tracking-[-0.008em] text-[var(--color-ink)]">
-            In 2023 I stepped away from tech roles, not from the work. With
-            the businesses I built now running on their own,{" "}
-            <em className="text-[var(--color-muted)]">the timing is right to go back in.</em>
+            In 2023 I stepped away from tech roles, not from the work. The
+            businesses now have a team running them day to day, and I&rsquo;m
+            ready to lead customer engineering again.
           </p>
 
           <dl className="mt-7 border-t border-[var(--color-line)]">
@@ -62,6 +63,22 @@ export function Why() {
             ))}
           </dl>
         </div>
+      </div>
+
+      {/* The portfolio: what the years outside a tech title built */}
+      <div className="mt-12 md:mt-14">
+        <div className="mono mb-4 flex items-center gap-3 text-[10.5px] uppercase tracking-[0.2em] text-[var(--color-subtle)]">
+          <span>The portfolio</span>
+          <span className="h-px flex-1 bg-[var(--color-line)]" />
+          <span className="text-[var(--color-accent)]">Five locations · Mexico City</span>
+        </div>
+        <p className="serif mb-5 max-w-[72ch] text-[16.5px] leading-[1.6] text-[var(--color-ink-2)]">
+          After a decade in tech, my partner and I moved to CDMX and built
+          these from the first hire. The work changed less than you&rsquo;d
+          think: customers, staff, regulators, and suppliers became the inputs,
+          and the systems thinking stayed the same.
+        </p>
+        <Portfolio />
       </div>
 
       {/* Three-criteria strip */}

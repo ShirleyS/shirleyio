@@ -93,23 +93,6 @@ body {
   color: var(--color-muted);
 }
 
-/* Long-form editorial paragraphs */
-.prose-editorial p {
-  font-family: var(--font-serif);
-  font-size: clamp(16px, 1.3vw, 17.5px);
-  line-height: 1.6;
-  letter-spacing: -0.005em;
-  color: var(--color-ink-2);
-  margin-bottom: 1.1em;
-}
-.prose-editorial p:last-child {
-  margin-bottom: 0;
-}
-.prose-editorial em {
-  font-style: italic;
-  color: var(--color-ink);
-}
-
 /* Gallery image swap */
 .fade-in {
   animation: fade-in 300ms ease both;

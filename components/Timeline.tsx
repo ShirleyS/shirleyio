@@ -73,22 +73,21 @@ export function Timeline() {
                     )}
                     aria-expanded={isOpen}
                   >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={entry.logo}
-                      alt=""
-                      aria-hidden
-                      style={{ height: entry.logoHeight }}
-                      className={cn(
-                        "mb-3 w-auto max-w-[150px] object-contain object-left transition-opacity duration-300",
-                        isOpen ? "opacity-100" : "opacity-80 group-hover:opacity-100",
-                      )}
-                    />
-                    <div className="flex flex-wrap items-baseline justify-between gap-3">
-                      <div className="flex items-baseline gap-3">
-                        <h3 className="serif text-[20px] font-normal tracking-tight text-[var(--color-ink)]">
-                          {entry.company}
-                        </h3>
+                    <div className="flex items-center justify-between gap-3">
+                      <div className="flex min-w-0 flex-wrap items-center gap-x-4 gap-y-1.5">
+                        {/* The logo stands in for the company name; the name stays for screen readers. */}
+                        <h3 className="sr-only">{entry.company}</h3>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={entry.logo}
+                          alt=""
+                          aria-hidden
+                          style={{ height: entry.logoHeight }}
+                          className={cn(
+                            "w-auto max-w-[150px] object-contain object-left transition-opacity duration-300",
+                            isOpen ? "opacity-100" : "opacity-85 group-hover:opacity-100",
+                          )}
+                        />
                         <span className="mono text-[11px] uppercase tracking-[0.14em] text-[var(--color-subtle)]">
                           {entry.range}
                         </span>
@@ -104,7 +103,7 @@ export function Timeline() {
                       </span>
                     </div>
 
-                    <p className="mt-1.5 text-[14.5px] text-[var(--color-muted)]">
+                    <p className="mt-2.5 text-[14.5px] text-[var(--color-muted)]">
                       {entry.role}
                     </p>
 

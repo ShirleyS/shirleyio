@@ -1,10 +1,52 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { CTA } from "@/components/ui/CTA";
 
 const ease = [0.2, 0.65, 0.3, 0.95] as const;
+
+const CUSTOMERS = [
+  "Stripe",
+  "Slack",
+  "Meta",
+  "Intercom",
+  "Unity",
+  "Segment",
+  "HubSpot",
+  "Snowflake",
+  "Asana",
+  "Okta",
+  "DocuSign",
+  "Gong",
+  "Qualified",
+  "G2",
+  "Adobe",
+  "Visa",
+  "AWS",
+  "Accenture",
+  "Deloitte",
+];
+
+const PLATFORMS = [
+  "Salesforce",
+  "HubSpot",
+  "Marketo",
+  "Eloqua",
+  "Outreach",
+  "Adobe Analytics",
+  "Adobe Target",
+  "Google Analytics",
+  "Google Tag Manager",
+  "Segment",
+  "Optimizely",
+  "Clearbit",
+  "Intercom",
+  "Responsys",
+  "Tray.io",
+  "Zapier",
+];
 
 const META = [
   "Mexico City",
@@ -98,83 +140,15 @@ export function Hero() {
           </motion.div>
         </div>
 
-        {/* Bottom marquee: customers + platforms */}
+        {/* Bottom strip: customers + platforms, folded to one row each */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.55, ease }}
           className="mt-7 grid gap-5 border-t border-[var(--color-line)] pt-4 md:mt-9 md:grid-cols-2 md:gap-10"
         >
-          <div>
-            <div className="mono mb-3.5 text-[10.5px] uppercase tracking-[0.2em] text-[var(--color-subtle)]">
-              Customers and Partners shipped to / supported
-            </div>
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[var(--color-muted)] md:gap-x-6 md:gap-y-2.5">
-              {[
-                "Stripe",
-                "Slack",
-                "Meta",
-                "Intercom",
-                "Unity",
-                "Segment",
-                "HubSpot",
-                "Snowflake",
-                "Asana",
-                "Okta",
-                "DocuSign",
-                "Gong",
-                "Qualified",
-                "G2",
-                "Adobe",
-                "Visa",
-                "AWS",
-                "Accenture",
-                "Deloitte",
-                "and many, many more",
-              ].map((c) => (
-                <span
-                  key={c}
-                  className="serif text-[13px] tracking-tight text-[var(--color-ink-2)]/70 transition-colors hover:text-[var(--color-ink)] md:text-[15px]"
-                >
-                  {c}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <div className="mono mb-3.5 text-[10.5px] uppercase tracking-[0.2em] text-[var(--color-subtle)]">
-              Platforms shipped against
-            </div>
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[var(--color-muted)] md:gap-x-6 md:gap-y-2.5">
-              {[
-                "Salesforce",
-                "HubSpot",
-                "Marketo",
-                "Eloqua",
-                "Outreach",
-                "Adobe Analytics",
-                "Adobe Target",
-                "Google Analytics",
-                "Google Tag Manager",
-                "Segment",
-                "Optimizely",
-                "Clearbit",
-                "Intercom",
-                "Responsys",
-                "Tray.io",
-                "Zapier",
-                "and many, many more",
-              ].map((p) => (
-                <span
-                  key={p}
-                  className="serif text-[13px] tracking-tight text-[var(--color-ink-2)]/70 transition-colors hover:text-[var(--color-ink)] md:text-[15px]"
-                >
-                  {p}
-                </span>
-              ))}
-            </div>
-          </div>
+          <NameList label="Customers and partners shipped to / supported" names={CUSTOMERS} visible={6} />
+          <NameList label="Platforms shipped against" names={PLATFORMS} visible={5} />
         </motion.div>
       </div>
     </section>
@@ -244,5 +218,43 @@ function Portrait() {
         </span>
       </figcaption>
     </figure>
+  );
+}
+
+function NameList({ label, names, visible }: { label: string; names: string[]; visible: number }) {
+  const [open, setOpen] = useState(false);
+  const shown = open ? names : names.slice(0, visible);
+  const hidden = names.length - visible;
+  return (
+    <div>
+      <div className="mono mb-3.5 text-[10.5px] uppercase tracking-[0.2em] text-[var(--color-subtle)]">
+        {label}
+      </div>
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[var(--color-muted)] md:gap-x-6 md:gap-y-2.5">
+        {shown.map((n) => (
+          <span
+            key={n}
+            className="serif text-[13px] tracking-tight text-[var(--color-ink-2)]/70 transition-colors hover:text-[var(--color-ink)] md:text-[15px]"
+          >
+            {n}
+          </span>
+        ))}
+        {open && (
+          <span className="serif text-[13px] tracking-tight text-[var(--color-subtle)] md:text-[15px]">
+            and many, many more
+          </span>
+        )}
+        {hidden > 0 && (
+          <button
+            type="button"
+            onClick={() => setOpen((o) => !o)}
+            aria-expanded={open}
+            className="mono rounded-full border border-[var(--color-line-strong)] px-2.5 py-0.5 text-[10px] uppercase tracking-[0.14em] text-[var(--color-muted)] transition-colors hover:border-[var(--color-ink)] hover:text-[var(--color-ink)]"
+          >
+            {open ? "Show less" : `+${hidden} more`}
+          </button>
+        )}
+      </div>
+    </div>
   );
 }
