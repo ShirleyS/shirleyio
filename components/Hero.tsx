@@ -101,7 +101,7 @@ export function Hero() {
               <span className="whitespace-nowrap">growth-stage</span> and enterprise teams.
               <span className="mt-3 block text-[0.6em] leading-[1.3] italic text-[var(--color-muted)]">
                 <span className="sm:block">A decade with customers.</span>{" "}
-                <span className="sm:block">A product-minded, AI-enabled leader.</span>
+                <span className="sm:block">Product-minded, AI-enabled leader.</span>
               </span>
             </motion.h1>
 
